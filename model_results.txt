@@ -1,0 +1,79 @@
+=== MODEL DEĞERLENDİRME RAPORU ===
+
+1. YARALANMA KATEGORİLERİ DAĞILIMI
+injury_category
+1     30
+2    178
+3    245
+4    208
+
+Kategori Açıklamaları:
+0: No injury (0 gün)
+1: Minimal injury (1-7 gün)
+2: Mild/Moderate injury (8-28 gün)
+3: Severe injury (29-84 gün)
+4: Long-term injury (>84 gün)
+
+2. MODEL METRİKLERİ
+           Model  Accuracy  Precision    Recall  F1-score
+0  Decision Tree  0.571429   0.613584  0.571429  0.576939
+1  Random Forest  0.609023   0.621775  0.609023  0.603558
+
+3. DETAYLI SINIFLANDIRMA RAPORU
+
+Decision Tree:
+              precision    recall  f1-score   support
+
+           1       0.22      0.29      0.25         7
+           2       0.56      0.65      0.60        37
+           3       0.78      0.51      0.62        55
+           4       0.49      0.65      0.56        34
+
+    accuracy                           0.57       133
+   macro avg       0.51      0.52      0.51       133
+weighted avg       0.61      0.57      0.58       133
+
+Random Forest:
+              precision    recall  f1-score   support
+
+           1       0.00      0.00      0.00         7
+           2       0.62      0.65      0.63        37
+           3       0.78      0.58      0.67        55
+           4       0.50      0.74      0.60        34
+
+    accuracy                           0.61       133
+   macro avg       0.47      0.49      0.47       133
+weighted avg       0.62      0.61      0.60       133
+
+
+4. ÖZELLİK ÖNEMİ ANALİZİ
+
+Decision Tree - Tüm Özellikler:
+                              Feature  Importance
+7             season_matches_in_squad    0.309090
+11            cumulative_days_injured    0.204508
+6               season_minutes_played    0.084473
+4                              physic    0.080356
+9   avg_games_per_season_prev_seasons    0.069902
+1                                 bmi    0.047544
+10      avg_days_injured_prev_seasons    0.045283
+8       minutes_per_game_prev_seasons    0.042990
+2                         fifa_rating    0.039108
+0                                 age    0.034179
+5                   work_rate_numeric    0.023481
+3                                pace    0.019087
+
+Random Forest - Tüm Özellikler:
+                              Feature  Importance
+7             season_matches_in_squad    0.241375
+11            cumulative_days_injured    0.149066
+6               season_minutes_played    0.099265
+2                         fifa_rating    0.067380
+10      avg_days_injured_prev_seasons    0.063989
+3                                pace    0.061054
+9   avg_games_per_season_prev_seasons    0.060786
+1                                 bmi    0.060631
+0                                 age    0.054091
+4                              physic    0.050701
+8       minutes_per_game_prev_seasons    0.049754
+5                   work_rate_numeric    0.041909

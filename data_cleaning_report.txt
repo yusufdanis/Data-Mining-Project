@@ -1,0 +1,843 @@
+=== VERİ TEMİZLEME RAPORU ===
+
+BAŞLANGIÇ DURUMU:
+Satır Sayısı: 1301
+Sütun Sayısı: 30
+
+Eksik Değerler:
+p_id                                   0
+start_year                             0
+season_days_injured                    0
+total_days_injured                     0
+season_minutes_played                  0
+season_games_played                    0
+season_matches_in_squad                0
+total_minutes_played                   0
+total_games_played                     0
+dob                                    0
+height_cm                              0
+weight_kg                              0
+nationality                            0
+work_rate                              0
+pace                                  95
+physic                                95
+fifa_rating                            0
+position                               2
+age                                    0
+cumulative_minutes_played            604
+cumulative_games_played              604
+minutes_per_game_prev_seasons        616
+avg_days_injured_prev_seasons        604
+avg_games_per_season_prev_seasons    604
+bmi                                    0
+work_rate_numeric                      0
+position_numeric                       2
+significant_injury_prev_season       604
+cumulative_days_injured              604
+season_days_injured_prev_season      604
+
+ÖNEMLİ SÜTUNLARDA EKSİK DEĞERLER:
+cumulative_minutes_played: 604 (%46.43)
+cumulative_games_played: 604 (%46.43)
+avg_days_injured_prev_seasons: 604 (%46.43)
+avg_games_per_season_prev_seasons: 604 (%46.43)
+significant_injury_prev_season: 604 (%46.43)
+cumulative_days_injured: 604 (%46.43)
+season_days_injured_prev_season: 604 (%46.43)
+minutes_per_game_prev_seasons: 616 (%47.35)
+
+KALDIRILAN SATIRLAR:
+Toplam kaldırılan satır sayısı: 616
+Kaldırılan satır yüzdesi: %47.35
+
+TEMİZLEME SONRASI DURUM:
+Kalan satır sayısı: 685
+Sütun sayısı: 30
+
+Kalan Eksik Değerler:
+p_id                                  0
+start_year                            0
+season_days_injured                   0
+total_days_injured                    0
+season_minutes_played                 0
+season_games_played                   0
+season_matches_in_squad               0
+total_minutes_played                  0
+total_games_played                    0
+dob                                   0
+height_cm                             0
+weight_kg                             0
+nationality                           0
+work_rate                             0
+pace                                 42
+physic                               42
+fifa_rating                           0
+position                              1
+age                                   0
+cumulative_minutes_played             0
+cumulative_games_played               0
+minutes_per_game_prev_seasons         0
+avg_days_injured_prev_seasons         0
+avg_games_per_season_prev_seasons     0
+bmi                                   0
+work_rate_numeric                     0
+position_numeric                      1
+significant_injury_prev_season        0
+cumulative_days_injured               0
+season_days_injured_prev_season       0
+
+=== P_ID VE DOB TUTARSIZLIK ANALİZİ ===
+
+Farklı doğum tarihi olan p_id sayısı: 11
+
+Tutarsız kayıtların detayları:
+
+P_ID: adamsmith
+         p_id         dob nationality    position  age  fifa_rating
+27  adamsmith  1991-04-29     England  Goalkeeper   26    73.333333
+28  adamsmith  1992-11-23     England    Defender   25    62.600000
+29  adamsmith  1992-11-23     England  Goalkeeper   25    62.600000
+30  adamsmith  1991-04-29     England    Defender   27    73.333333
+31  adamsmith  1991-04-29     England  Goalkeeper   27    73.333333
+32  adamsmith  1992-11-23     England    Defender   26    62.600000
+33  adamsmith  1992-11-23     England  Goalkeeper   26    62.600000
+34  adamsmith  1991-04-29     England    Defender   28    73.333333
+35  adamsmith  1991-04-29     England  Goalkeeper   28    73.333333
+36  adamsmith  1992-11-23     England    Defender   27    62.600000
+37  adamsmith  1992-11-23     England  Goalkeeper   27    62.600000
+Yeni P_ID oluşturuldu (birth year): adamsmith_1991
+Yeni P_ID oluşturuldu (birth year): adamsmith_1992
+P_ID: bendavies
+          p_id         dob nationality  position  age  fifa_rating
+137  bendavies  1981-05-27     England  Defender   35    65.000000
+138  bendavies  1993-04-24       Wales  Defender   23    78.666667
+139  bendavies  1993-04-24       Wales  Defender   23    78.666667
+140  bendavies  1995-08-11     England  Defender   21    68.000000
+141  bendavies  1995-08-11     England  Defender   21    68.000000
+142  bendavies  1981-05-27     England  Defender   37    65.000000
+143  bendavies  1981-05-27     England  Defender   37    65.000000
+144  bendavies  1993-04-24       Wales  Defender   25    78.666667
+145  bendavies  1993-04-24       Wales  Defender   25    78.666667
+146  bendavies  1995-08-11     England  Defender   23    68.000000
+147  bendavies  1995-08-11     England  Defender   23    68.000000
+148  bendavies  1981-05-27     England  Defender   38    65.000000
+149  bendavies  1981-05-27     England  Defender   38    65.000000
+150  bendavies  1993-04-24       Wales  Defender   26    78.666667
+151  bendavies  1993-04-24       Wales  Defender   26    78.666667
+152  bendavies  1995-08-11     England  Defender   24    68.000000
+153  bendavies  1995-08-11     England  Defender   24    68.000000
+154  bendavies  1981-05-27     England  Defender   39    65.000000
+155  bendavies  1981-05-27     England  Defender   39    65.000000
+156  bendavies  1993-04-24       Wales  Defender   27    78.666667
+157  bendavies  1993-04-24       Wales  Defender   27    78.666667
+158  bendavies  1995-08-11     England  Defender   25    68.000000
+159  bendavies  1995-08-11     England  Defender   25    68.000000
+Yeni P_ID oluşturuldu (birth year): bendavies_1981
+Yeni P_ID oluşturuldu (birth year): bendavies_1993
+Yeni P_ID oluşturuldu (birth year): bendavies_1995
+P_ID: callumwilson
+             p_id         dob nationality position  age  fifa_rating
+199  callumwilson  1997-07-02     England  Forward   19    53.000000
+200  callumwilson  1992-02-27     England  Forward   26    76.833333
+201  callumwilson  1997-07-02     England  Forward   21    53.000000
+202  callumwilson  1992-02-27     England  Forward   27    76.833333
+203  callumwilson  1997-07-02     England  Forward   22    53.000000
+204  callumwilson  1992-02-27     England  Forward   28    76.833333
+205  callumwilson  1997-07-02     England  Forward   23    53.000000
+Yeni P_ID oluşturuldu (birth year): callumwilson_1997
+Yeni P_ID oluşturuldu (birth year): callumwilson_1992
+P_ID: claudiobravo
+             p_id         dob nationality    position  age  fifa_rating
+256  claudiobravo  1997-03-13   Argentina  Goalkeeper   19        65.25
+257  claudiobravo  1983-04-13       Chile  Goalkeeper   35        80.50
+258  claudiobravo  1997-03-13   Argentina  Goalkeeper   21        65.25
+Yeni P_ID oluşturuldu (birth year): claudiobravo_1997
+Yeni P_ID oluşturuldu (birth year): claudiobravo_1983
+P_ID: dannyrose
+          p_id         dob nationality    position  age  fifa_rating
+297  dannyrose  1990-07-02     England  Midfielder   26    79.666667
+298  dannyrose  1993-12-10     England    Defender   23    63.666667
+299  dannyrose  1993-12-10     England  Midfielder   23    63.666667
+300  dannyrose  1988-02-21     England    Defender   28    63.333333
+301  dannyrose  1988-02-21     England  Midfielder   28    63.333333
+302  dannyrose  1990-07-02     England    Defender   27    79.666667
+303  dannyrose  1990-07-02     England  Midfielder   27    79.666667
+304  dannyrose  1993-12-10     England    Defender   24    63.666667
+305  dannyrose  1993-12-10     England  Midfielder   24    63.666667
+306  dannyrose  1988-02-21     England    Defender   29    63.333333
+307  dannyrose  1988-02-21     England  Midfielder   29    63.333333
+308  dannyrose  1990-07-02     England    Defender   28    79.666667
+309  dannyrose  1990-07-02     England  Midfielder   28    79.666667
+310  dannyrose  1993-12-10     England    Defender   25    63.666667
+311  dannyrose  1993-12-10     England  Midfielder   25    63.666667
+312  dannyrose  1988-02-21     England    Defender   30    63.333333
+313  dannyrose  1988-02-21     England  Midfielder   30    63.333333
+Yeni P_ID oluşturuldu (birth year): dannyrose_1990
+Yeni P_ID oluşturuldu (birth year): dannyrose_1993
+Yeni P_ID oluşturuldu (birth year): dannyrose_1988
+P_ID: dannyward
+          p_id         dob nationality    position  age  fifa_rating
+320  dannyward  1990-12-09     England  Goalkeeper   28    68.166667
+321  dannyward  1993-06-22       Wales     Forward   25    68.833333
+322  dannyward  1993-06-22       Wales  Goalkeeper   25    68.833333
+323  dannyward  1990-12-09     England     Forward   30    68.166667
+324  dannyward  1990-12-09     England  Goalkeeper   30    68.166667
+325  dannyward  1993-06-22       Wales     Forward   27    68.833333
+326  dannyward  1993-06-22       Wales  Goalkeeper   27    68.833333
+Yeni P_ID oluşturuldu (birth year): dannyward_1990
+Yeni P_ID oluşturuldu (birth year): dannyward_1993
+P_ID: dannywilliams
+              p_id         dob    nationality    position  age  fifa_rating
+333  dannywilliams  1989-03-08  United States  Midfielder   28        70.50
+334  dannywilliams  1988-01-25        England  Midfielder   29        62.25
+335  dannywilliams  1988-01-25        England  Midfielder   29        62.25
+336  dannywilliams  1989-03-08  United States  Midfielder   29        70.50
+337  dannywilliams  1989-03-08  United States  Midfielder   29        70.50
+338  dannywilliams  1988-01-25        England  Midfielder   30        62.25
+339  dannywilliams  1988-01-25        England  Midfielder   30        62.25
+Yeni P_ID oluşturuldu (birth year): dannywilliams_1989
+Yeni P_ID oluşturuldu (birth year): dannywilliams_1988
+P_ID: jamescollins
+             p_id         dob          nationality  position  age  fifa_rating
+558  jamescollins  1983-08-23                Wales  Defender   33    75.666667
+559  jamescollins  1990-12-01  Republic of Ireland   Forward   26    67.666667
+560  jamescollins  1990-12-01  Republic of Ireland  Defender   26    67.666667
+561  jamescollins  1983-08-23                Wales   Forward   34    75.666667
+562  jamescollins  1983-08-23                Wales  Defender   34    75.666667
+563  jamescollins  1990-12-01  Republic of Ireland   Forward   27    67.666667
+564  jamescollins  1990-12-01  Republic of Ireland  Defender   27    67.666667
+Yeni P_ID oluşturuldu (birth year): jamescollins_1983
+Yeni P_ID oluşturuldu (birth year): jamescollins_1990
+P_ID: reecejames
+            p_id         dob nationality  position  age  fifa_rating
+1039  reecejames  1993-11-07     England  Defender   26         68.5
+1040  reecejames  1999-12-08     England  Defender   20         68.0
+1041  reecejames  1999-12-08     England  Defender   20         68.0
+1042  reecejames  1993-11-07     England  Defender   27         68.5
+1043  reecejames  1993-11-07     England  Defender   27         68.5
+1044  reecejames  1999-12-08     England  Defender   21         68.0
+1045  reecejames  1999-12-08     England  Defender   21         68.0
+Yeni P_ID oluşturuldu (birth year): reecejames_1993
+Yeni P_ID oluşturuldu (birth year): reecejames_1999
+P_ID: sergioromero
+              p_id         dob nationality    position  age  fifa_rating
+1126  sergioromero  1988-11-22    Colombia  Goalkeeper   29    66.400000
+1127  sergioromero  1987-02-22   Argentina  Goalkeeper   31    79.166667
+1128  sergioromero  1988-11-22    Colombia  Goalkeeper   30    66.400000
+Yeni P_ID oluşturuldu (birth year): sergioromero_1988
+Yeni P_ID oluşturuldu (birth year): sergioromero_1987
+P_ID: tommysmith
+            p_id         dob  nationality  position  age  fifa_rating
+1219  tommysmith  1990-03-31  New Zealand   Forward   28    69.666667
+1220  tommysmith  1992-04-14      England  Defender   26    70.500000
+1221  tommysmith  1992-04-14      England   Forward   26    70.500000
+Yeni P_ID oluşturuldu (birth year): tommysmith_1990
+Yeni P_ID oluşturuldu (birth year): tommysmith_1992
+
+=== P_ID YENİDEN İSİMLENDİRME SONRASI DURUM ===
+
+Tüm P_ID ve DOB tutarsızlıkları düzeltildi.
+FIFA Rating tutarsızlığı bulunmamaktadır.
+
+Position tutarsızlığı olan p_id sayısı: 11
+Tutarsız kayıtların detayları:
+
+P_ID: adamsmith_1991
+              p_id         dob    position  start_year
+27  adamsmith_1991  1991-04-29  Goalkeeper        2017
+30  adamsmith_1991  1991-04-29    Defender        2018
+31  adamsmith_1991  1991-04-29  Goalkeeper        2018
+34  adamsmith_1991  1991-04-29    Defender        2019
+35  adamsmith_1991  1991-04-29  Goalkeeper        2019
+P_ID: adamsmith_1992
+              p_id         dob    position  start_year
+28  adamsmith_1992  1992-11-23    Defender        2017
+29  adamsmith_1992  1992-11-23  Goalkeeper        2017
+32  adamsmith_1992  1992-11-23    Defender        2018
+33  adamsmith_1992  1992-11-23  Goalkeeper        2018
+36  adamsmith_1992  1992-11-23    Defender        2019
+37  adamsmith_1992  1992-11-23  Goalkeeper        2019
+P_ID: ashleywestwood
+               p_id         dob    position  start_year
+114  ashleywestwood  1990-04-01  Midfielder        2019
+115  ashleywestwood  1990-04-01    Defender        2020
+116  ashleywestwood  1990-04-01  Midfielder        2020
+P_ID: dannyrose_1988
+               p_id         dob    position  start_year
+300  dannyrose_1988  1988-02-21    Defender        2016
+301  dannyrose_1988  1988-02-21  Midfielder        2016
+306  dannyrose_1988  1988-02-21    Defender        2017
+307  dannyrose_1988  1988-02-21  Midfielder        2017
+312  dannyrose_1988  1988-02-21    Defender        2018
+313  dannyrose_1988  1988-02-21  Midfielder        2018
+P_ID: dannyrose_1990
+               p_id         dob    position  start_year
+297  dannyrose_1990  1990-07-02  Midfielder        2016
+302  dannyrose_1990  1990-07-02    Defender        2017
+303  dannyrose_1990  1990-07-02  Midfielder        2017
+308  dannyrose_1990  1990-07-02    Defender        2018
+309  dannyrose_1990  1990-07-02  Midfielder        2018
+P_ID: dannyrose_1993
+               p_id         dob    position  start_year
+298  dannyrose_1993  1993-12-10    Defender        2016
+299  dannyrose_1993  1993-12-10  Midfielder        2016
+304  dannyrose_1993  1993-12-10    Defender        2017
+305  dannyrose_1993  1993-12-10  Midfielder        2017
+310  dannyrose_1993  1993-12-10    Defender        2018
+311  dannyrose_1993  1993-12-10  Midfielder        2018
+P_ID: dannyward_1990
+               p_id         dob    position  start_year
+320  dannyward_1990  1990-12-09  Goalkeeper        2018
+323  dannyward_1990  1990-12-09     Forward        2020
+324  dannyward_1990  1990-12-09  Goalkeeper        2020
+P_ID: dannyward_1993
+               p_id         dob    position  start_year
+321  dannyward_1993  1993-06-22     Forward        2018
+322  dannyward_1993  1993-06-22  Goalkeeper        2018
+325  dannyward_1993  1993-06-22     Forward        2020
+326  dannyward_1993  1993-06-22  Goalkeeper        2020
+P_ID: jamescollins_1983
+                  p_id         dob  position  start_year
+558  jamescollins_1983  1983-08-23  Defender        2016
+561  jamescollins_1983  1983-08-23   Forward        2017
+562  jamescollins_1983  1983-08-23  Defender        2017
+P_ID: jamescollins_1990
+                  p_id         dob  position  start_year
+559  jamescollins_1990  1990-12-01   Forward        2016
+560  jamescollins_1990  1990-12-01  Defender        2016
+563  jamescollins_1990  1990-12-01   Forward        2017
+564  jamescollins_1990  1990-12-01  Defender        2017
+P_ID: tommysmith_1992
+                 p_id         dob  position  start_year
+1220  tommysmith_1992  1992-04-14  Defender        2018
+1221  tommysmith_1992  1992-04-14   Forward        2018
+
+Belirtilen p_id-position eşleşmeleri dışındaki kayıtlar silindi.
+
+=== KAYIT SİLME SONRASI POSITION KONTROLÜ ===
+
+Tüm position tutarsızlıkları giderildi.
+
+=== PACE VE PHYSIC EKSİK DEĞER ANALİZİ ===
+
+Her iki sütunda da eksik olan satır sayısı: 37
+
+Eksik değer olan satırların detayları:
+                     p_id    position  age  fifa_rating  pace  physic
+29         adamsmith_1992  Goalkeeper   25    62.600000   NaN     NaN
+33         adamsmith_1992  Goalkeeper   26    62.600000   NaN     NaN
+37         adamsmith_1992  Goalkeeper   27    62.600000   NaN     NaN
+59           alexmccarthy  Goalkeeper   30    76.000000   NaN     NaN
+60           alexmccarthy  Goalkeeper   31    76.000000   NaN     NaN
+180             berndleno  Goalkeeper   27    84.666667   NaN     NaN
+257     claudiobravo_1983  Goalkeeper   35    80.500000   NaN     NaN
+268      costelpantilimon         NaN   30    74.000000   NaN     NaN
+322        dannyward_1993  Goalkeeper   25    68.833333   NaN     NaN
+326        dannyward_1993  Goalkeeper   27    68.833333   NaN     NaN
+354           davidospina  Goalkeeper   29    78.833333   NaN     NaN
+510            hugolloris  Goalkeeper   31    87.333333   NaN     NaN
+511            hugolloris  Goalkeeper   32    87.333333   NaN     NaN
+512            hugolloris  Goalkeeper   33    87.333333   NaN     NaN
+513            hugolloris  Goalkeeper   34    87.333333   NaN     NaN
+532           jackbutland  Goalkeeper   27    78.833333   NaN     NaN
+679        jordanpickford  Goalkeeper   26    77.000000   NaN     NaN
+704            karldarlow  Goalkeeper   28    70.833333   NaN     NaN
+705            karldarlow  Goalkeeper   29    70.833333   NaN     NaN
+706            karldarlow  Goalkeeper   30    70.833333   NaN     NaN
+709      kasperschmeichel  Goalkeeper   31    81.833333   NaN     NaN
+720      kepaarrizabalaga  Goalkeeper   26    79.333333   NaN     NaN
+764              leegrant  Goalkeeper   36    70.166667   NaN     NaN
+779           loriskarius  Goalkeeper   24    79.333333   NaN     NaN
+780           loriskarius  Goalkeeper   25    79.333333   NaN     NaN
+792       lukaszfabianski  Goalkeeper   34    80.166667   NaN     NaN
+793       lukaszfabianski  Goalkeeper   35    80.166667   NaN     NaN
+803   maartenstekelenburg  Goalkeeper   35    74.333333   NaN     NaN
+917            michelvorm  Goalkeeper   35    79.250000   NaN     NaN
+1009             petrcech  Goalkeeper   36    85.250000   NaN     NaN
+1127    sergioromero_1987  Goalkeeper   31    79.166667   NaN     NaN
+1192      thibautcourtois  Goalkeeper   25    88.500000   NaN     NaN
+1212            tomheaton  Goalkeeper   32    78.166667   NaN     NaN
+1213            tomheaton  Goalkeeper   33    78.166667   NaN     NaN
+1214            tomheaton  Goalkeeper   34    78.166667   NaN     NaN
+1253       waynehennessey  Goalkeeper   31    74.500000   NaN     NaN
+1254       waynehennessey  Goalkeeper   33    74.500000   NaN     NaN
+
+=== AYNI P_ID'DEN PACE VE PHYSIC DOLDURMA ===
+
+
+Toplam 0 kayıt dolduruldu.
+
+=== BENZER OYUNCULARDAN PACE VE PHYSIC DOLDURMA ===
+
+P_ID: adamsmith_1992
+Benzer oyuncu P_ID: claudiobravo_1997
+Benzerlik özellikleri:
+  Yaş farkı: 4.00
+  BMI farkı: 4.35
+  Rating farkı: 2.65
+Doldurulan değerler - Pace: 71.75, Physic: 61.75
+P_ID: adamsmith_1992
+Benzer oyuncu P_ID: adamsmith_1992
+Benzerlik özellikleri:
+  Yaş farkı: 1.00
+  BMI farkı: 0.00
+  Rating farkı: 0.00
+Doldurulan değerler - Pace: 71.75, Physic: 61.75
+P_ID: adamsmith_1992
+Benzer oyuncu P_ID: adamsmith_1992
+Benzerlik özellikleri:
+  Yaş farkı: 1.00
+  BMI farkı: 0.00
+  Rating farkı: 0.00
+Doldurulan değerler - Pace: 71.75, Physic: 61.75
+P_ID: alexmccarthy
+Benzer oyuncu P_ID: sergioromero_1988
+Benzerlik özellikleri:
+  Yaş farkı: 0.00
+  BMI farkı: 2.07
+  Rating farkı: 9.60
+Doldurulan değerler - Pace: 72.8, Physic: 53.0
+P_ID: alexmccarthy
+Benzer oyuncu P_ID: alexmccarthy
+Benzerlik özellikleri:
+  Yaş farkı: 1.00
+  BMI farkı: 0.00
+  Rating farkı: 0.00
+Doldurulan değerler - Pace: 72.8, Physic: 53.0
+P_ID: berndleno
+Benzer oyuncu P_ID: alexmccarthy
+Benzerlik özellikleri:
+  Yaş farkı: 3.00
+  BMI farkı: 1.69
+  Rating farkı: 8.67
+Doldurulan değerler - Pace: 72.8, Physic: 53.0
+P_ID: claudiobravo_1983
+Benzer oyuncu P_ID: berndleno
+Benzerlik özellikleri:
+  Yaş farkı: 8.00
+  BMI farkı: 0.73
+  Rating farkı: 4.17
+Doldurulan değerler - Pace: 72.8, Physic: 53.0
+P_ID: costelpantilimon
+Benzer oyuncu P_ID: alexmccarthy
+Benzerlik özellikleri:
+  Yaş farkı: 0.00
+  BMI farkı: 2.65
+  Rating farkı: 2.00
+Doldurulan değerler - Pace: 72.8, Physic: 53.0
+P_ID: dannyward_1993
+Benzer oyuncu P_ID: sergioromero_1988
+Benzerlik özellikleri:
+  Yaş farkı: 4.00
+  BMI farkı: 0.84
+  Rating farkı: 2.43
+Doldurulan değerler - Pace: 72.8, Physic: 53.0
+P_ID: dannyward_1993
+Benzer oyuncu P_ID: dannyward_1993
+Benzerlik özellikleri:
+  Yaş farkı: 2.00
+  BMI farkı: 0.00
+  Rating farkı: 0.00
+Doldurulan değerler - Pace: 72.8, Physic: 53.0
+P_ID: davidospina
+Benzer oyuncu P_ID: costelpantilimon
+Benzerlik özellikleri:
+  Yaş farkı: 1.00
+  BMI farkı: 0.07
+  Rating farkı: 4.83
+Doldurulan değerler - Pace: 72.8, Physic: 53.0
+P_ID: hugolloris
+Benzer oyuncu P_ID: berndleno
+Benzerlik özellikleri:
+  Yaş farkı: 4.00
+  BMI farkı: 0.08
+  Rating farkı: 2.67
+Doldurulan değerler - Pace: 72.8, Physic: 53.0
+P_ID: hugolloris
+Benzer oyuncu P_ID: hugolloris
+Benzerlik özellikleri:
+  Yaş farkı: 1.00
+  BMI farkı: 0.00
+  Rating farkı: 0.00
+Doldurulan değerler - Pace: 72.8, Physic: 53.0
+P_ID: hugolloris
+Benzer oyuncu P_ID: hugolloris
+Benzerlik özellikleri:
+  Yaş farkı: 1.00
+  BMI farkı: 0.00
+  Rating farkı: 0.00
+Doldurulan değerler - Pace: 72.8, Physic: 53.0
+P_ID: hugolloris
+Benzer oyuncu P_ID: hugolloris
+Benzerlik özellikleri:
+  Yaş farkı: 1.00
+  BMI farkı: 0.00
+  Rating farkı: 0.00
+Doldurulan değerler - Pace: 72.8, Physic: 53.0
+P_ID: jackbutland
+Benzer oyuncu P_ID: davidospina
+Benzerlik özellikleri:
+  Yaş farkı: 2.00
+  BMI farkı: 0.94
+  Rating farkı: 0.00
+Doldurulan değerler - Pace: 72.8, Physic: 53.0
+P_ID: jordanpickford
+Benzer oyuncu P_ID: jackbutland
+Benzerlik özellikleri:
+  Yaş farkı: 1.00
+  BMI farkı: 2.23
+  Rating farkı: 1.83
+Doldurulan değerler - Pace: 72.8, Physic: 53.0
+P_ID: karldarlow
+Benzer oyuncu P_ID: sergioromero_1988
+Benzerlik özellikleri:
+  Yaş farkı: 1.00
+  BMI farkı: 0.48
+  Rating farkı: 4.43
+Doldurulan değerler - Pace: 72.8, Physic: 53.0
+P_ID: karldarlow
+Benzer oyuncu P_ID: karldarlow
+Benzerlik özellikleri:
+  Yaş farkı: 1.00
+  BMI farkı: 0.00
+  Rating farkı: 0.00
+Doldurulan değerler - Pace: 72.8, Physic: 53.0
+P_ID: karldarlow
+Benzer oyuncu P_ID: karldarlow
+Benzerlik özellikleri:
+  Yaş farkı: 1.00
+  BMI farkı: 0.00
+  Rating farkı: 0.00
+Doldurulan değerler - Pace: 72.8, Physic: 53.0
+P_ID: kasperschmeichel
+Benzer oyuncu P_ID: davidospina
+Benzerlik özellikleri:
+  Yaş farkı: 2.00
+  BMI farkı: 0.25
+  Rating farkı: 3.00
+Doldurulan değerler - Pace: 72.8, Physic: 53.0
+P_ID: kepaarrizabalaga
+Benzer oyuncu P_ID: jackbutland
+Benzerlik özellikleri:
+  Yaş farkı: 1.00
+  BMI farkı: 0.61
+  Rating farkı: 0.50
+Doldurulan değerler - Pace: 72.8, Physic: 53.0
+P_ID: leegrant
+Benzer oyuncu P_ID: karldarlow
+Benzerlik özellikleri:
+  Yaş farkı: 6.00
+  BMI farkı: 0.52
+  Rating farkı: 0.67
+Doldurulan değerler - Pace: 72.8, Physic: 53.0
+P_ID: loriskarius
+Benzer oyuncu P_ID: kepaarrizabalaga
+Benzerlik özellikleri:
+  Yaş farkı: 2.00
+  BMI farkı: 0.41
+  Rating farkı: 0.00
+Doldurulan değerler - Pace: 72.8, Physic: 53.0
+P_ID: loriskarius
+Benzer oyuncu P_ID: loriskarius
+Benzerlik özellikleri:
+  Yaş farkı: 1.00
+  BMI farkı: 0.00
+  Rating farkı: 0.00
+Doldurulan değerler - Pace: 72.8, Physic: 53.0
+P_ID: lukaszfabianski
+Benzer oyuncu P_ID: claudiobravo_1983
+Benzerlik özellikleri:
+  Yaş farkı: 1.00
+  BMI farkı: 0.64
+  Rating farkı: 0.33
+Doldurulan değerler - Pace: 72.8, Physic: 53.0
+P_ID: lukaszfabianski
+Benzer oyuncu P_ID: lukaszfabianski
+Benzerlik özellikleri:
+  Yaş farkı: 1.00
+  BMI farkı: 0.00
+  Rating farkı: 0.00
+Doldurulan değerler - Pace: 72.8, Physic: 53.0
+P_ID: maartenstekelenburg
+Benzer oyuncu P_ID: costelpantilimon
+Benzerlik özellikleri:
+  Yaş farkı: 5.00
+  BMI farkı: 0.16
+  Rating farkı: 0.33
+Doldurulan değerler - Pace: 72.8, Physic: 53.0
+P_ID: michelvorm
+Benzer oyuncu P_ID: claudiobravo_1983
+Benzerlik özellikleri:
+  Yaş farkı: 0.00
+  BMI farkı: 1.69
+  Rating farkı: 1.25
+Doldurulan değerler - Pace: 72.8, Physic: 53.0
+P_ID: petrcech
+Benzer oyuncu P_ID: claudiobravo_1983
+Benzerlik özellikleri:
+  Yaş farkı: 1.00
+  BMI farkı: 0.20
+  Rating farkı: 4.75
+Doldurulan değerler - Pace: 72.8, Physic: 53.0
+P_ID: sergioromero_1987
+Benzer oyuncu P_ID: davidospina
+Benzerlik özellikleri:
+  Yaş farkı: 2.00
+  BMI farkı: 0.28
+  Rating farkı: 0.33
+Doldurulan değerler - Pace: 72.8, Physic: 53.0
+P_ID: thibautcourtois
+Benzer oyuncu P_ID: loriskarius
+Benzerlik özellikleri:
+  Yaş farkı: 0.00
+  BMI farkı: 0.10
+  Rating farkı: 9.17
+Doldurulan değerler - Pace: 72.8, Physic: 53.0
+P_ID: tomheaton
+Benzer oyuncu P_ID: michelvorm
+Benzerlik özellikleri:
+  Yaş farkı: 3.00
+  BMI farkı: 0.00
+  Rating farkı: 1.08
+Doldurulan değerler - Pace: 72.8, Physic: 53.0
+P_ID: tomheaton
+Benzer oyuncu P_ID: tomheaton
+Benzerlik özellikleri:
+  Yaş farkı: 1.00
+  BMI farkı: 0.00
+  Rating farkı: 0.00
+Doldurulan değerler - Pace: 72.8, Physic: 53.0
+P_ID: tomheaton
+Benzer oyuncu P_ID: tomheaton
+Benzerlik özellikleri:
+  Yaş farkı: 1.00
+  BMI farkı: 0.00
+  Rating farkı: 0.00
+Doldurulan değerler - Pace: 72.8, Physic: 53.0
+P_ID: waynehennessey
+Benzer oyuncu P_ID: costelpantilimon
+Benzerlik özellikleri:
+  Yaş farkı: 1.00
+  BMI farkı: 0.91
+  Rating farkı: 0.50
+Doldurulan değerler - Pace: 72.8, Physic: 53.0
+P_ID: waynehennessey
+Benzer oyuncu P_ID: waynehennessey
+Benzerlik özellikleri:
+  Yaş farkı: 2.00
+  BMI farkı: 0.00
+  Rating farkı: 0.00
+Doldurulan değerler - Pace: 72.8, Physic: 53.0
+
+Benzer oyunculardan toplam 37 kayıt dolduruldu.
+
+=== DOLDURMA SONRASI PACE VE PHYSIC ANALİZİ ===
+
+Her iki sütunda da hala eksik olan satır sayısı: 0
+
+=== VERİ SETİ SON DURUM ANALİZİ ===
+
+Genel Bilgiler:
+Satır Sayısı: 661
+Sütun Sayısı: 30
+
+Eksik Değerler:
+p_id                                 0
+start_year                           0
+season_days_injured                  0
+total_days_injured                   0
+season_minutes_played                0
+season_games_played                  0
+season_matches_in_squad              0
+total_minutes_played                 0
+total_games_played                   0
+dob                                  0
+height_cm                            0
+weight_kg                            0
+nationality                          0
+work_rate                            0
+pace                                 0
+physic                               0
+fifa_rating                          0
+position                             0
+age                                  0
+cumulative_minutes_played            0
+cumulative_games_played              0
+minutes_per_game_prev_seasons        0
+avg_days_injured_prev_seasons        0
+avg_games_per_season_prev_seasons    0
+bmi                                  0
+work_rate_numeric                    0
+position_numeric                     0
+significant_injury_prev_season       0
+cumulative_days_injured              0
+season_days_injured_prev_season      0
+
+=== VERİ TEMİZLEME ANALİZLERİ ===
+
+1. AYKIRI DEĞER ANALİZİ
+
+AGE Aykırı Değer Analizi:
+Alt Sınır: 17.50
+Üst Sınır: 37.50
+Aykırı Değer Sayısı: 4
+Aykırı Değerler:
+               p_id  age  position
+148  bendavies_1981   38  Defender
+149  bendavies_1981   38  Defender
+154  bendavies_1981   39  Defender
+155  bendavies_1981   39  Defender
+FIFA_RATING Aykırı Değer Analizi:
+Alt Sınır: 62.25
+Üst Sınır: 89.58
+Aykırı Değer Sayısı: 11
+Aykırı Değerler:
+                    p_id  fifa_rating    position
+199    callumwilson_1997        53.00     Forward
+201    callumwilson_1997        53.00     Forward
+203    callumwilson_1997        53.00     Forward
+205    callumwilson_1997        53.00     Forward
+334   dannywilliams_1988        62.25  Midfielder
+335   dannywilliams_1988        62.25  Midfielder
+338   dannywilliams_1988        62.25  Midfielder
+339   dannywilliams_1988        62.25  Midfielder
+653          jonasolsson        58.00    Defender
+960          nathantella        61.00  Midfielder
+1229      tyrickmitchell        59.50    Defender
+BMI Aykırı Değer Analizi:
+Alt Sınır: 19.41
+Üst Sınır: 26.73
+Aykırı Değer Sayısı: 10
+Aykırı Değerler:
+                p_id        bmi    position
+127       bakarysako  26.778568  Midfielder
+128       bakarysako  26.778568  Midfielder
+347      davidbrooks  18.973120  Midfielder
+409   emilesmithrowe  19.321338  Midfielder
+1225      troydeeney  26.874496     Forward
+1226      troydeeney  26.874496     Forward
+1256     waynerooney  26.794938     Forward
+1260       wesmorgan  28.525475    Defender
+1261       wesmorgan  28.525475    Defender
+1262       wesmorgan  28.525475    Defender
+PACE Aykırı Değer Analizi:
+Alt Sınır: 43.93
+Üst Sınır: 98.12
+Aykırı Değer Sayısı: 12
+Aykırı Değerler:
+                   p_id       pace  position
+474         glennmurray  39.800000   Forward
+475         glennmurray  39.800000   Forward
+558   jamescollins_1983  37.666667  Defender
+562   jamescollins_1983  37.666667  Defender
+597   jannikvestergaard  40.500000  Defender
+598   jannikvestergaard  40.500000  Defender
+1107          scottdann  41.333333  Defender
+1108          scottdann  41.333333  Defender
+1109          scottdann  41.333333  Defender
+1260          wesmorgan  38.166667  Defender
+1261          wesmorgan  38.166667  Defender
+1262          wesmorgan  38.166667  Defender
+PHYSIC Aykırı Değer Analizi:
+Alt Sınır: 51.67
+Üst Sınır: 91.67
+Aykırı Değer Sayısı: 15
+Aykırı Değerler:
+                p_id     physic    position
+62     alexpritchard  51.000000  Midfielder
+229    christianatsu  47.833333  Midfielder
+389    domingosquina  47.750000  Midfielder
+409   emilesmithrowe  46.000000  Midfielder
+569    jamesmaddison  49.166667  Midfielder
+570    jamesmaddison  49.166667  Midfielder
+812    manuellanzini  50.333333  Midfielder
+813    manuellanzini  50.333333  Midfielder
+814    manuellanzini  50.333333  Midfielder
+815    manuellanzini  50.333333  Midfielder
+958    nathanredmond  50.166667  Midfielder
+960      nathantella  50.000000  Midfielder
+1049     reissnelson  46.500000     Forward
+1148   sofianeboufal  48.666667  Midfielder
+1229  tyrickmitchell  51.500000    Defender
+
+2. TUTARSIZLIK ANALİZİ
+
+Yaş-Rating Tutarsızlığı:
+35 yaş üstü yüksek ratingli oyuncular:
+                   p_id  age  fifa_rating
+1009           petrcech   36    85.250000
+1300  zlatanibrahimovic   36    86.666667
+
+Position-Pace/Physic Tutarsızlığı:
+Düşük pace'li forvetler:
+              p_id position       pace
+87     andycarroll  Forward  54.666667
+88     andycarroll  Forward  54.666667
+89     andycarroll  Forward  54.666667
+90     andycarroll  Forward  54.666667
+474    glennmurray  Forward  39.800000
+475    glennmurray  Forward  39.800000
+985  oliviergiroud  Forward  52.000000
+986  oliviergiroud  Forward  52.000000
+987  oliviergiroud  Forward  52.000000
+Düşük physic'li defanslar:
+                    p_id  position  physic
+964         necowilliams  Defender    55.0
+977   oleksandrzinchenko  Defender    59.5
+978   oleksandrzinchenko  Defender    59.5
+1229      tyrickmitchell  Defender    51.5
+
+BMI Tutarsızlığı:
+
+3. VERİ TİPİ KONTROLLERİ
+
+Sütun Veri Tipleri:
+p_id                                  object
+start_year                             int64
+season_days_injured                    int64
+total_days_injured                     int64
+season_minutes_played                float64
+season_games_played                    int64
+season_matches_in_squad                int64
+total_minutes_played                 float64
+total_games_played                     int64
+dob                                   object
+height_cm                             object
+weight_kg                            float64
+nationality                           object
+work_rate                             object
+pace                                 float64
+physic                               float64
+fifa_rating                          float64
+position                              object
+age                                    int64
+cumulative_minutes_played            float64
+cumulative_games_played              float64
+minutes_per_game_prev_seasons        float64
+avg_days_injured_prev_seasons        float64
+avg_games_per_season_prev_seasons    float64
+bmi                                  float64
+work_rate_numeric                    float64
+position_numeric                       int64
+significant_injury_prev_season       float64
+cumulative_days_injured              float64
+season_days_injured_prev_season      float64
+
+4. KORELASYON ANALİZİ
+
+Yüksek Korelasyonlu Değişkenler (>0.9):
+season_minutes_played - season_games_played: 0.93
+total_minutes_played - total_games_played: 0.95
+cumulative_minutes_played - cumulative_games_played: 0.99
+
+Çıkartılan Yüksek Korelasyonlu Değişkenler:
+season_games_played, total_games_played, cumulative_games_played
+
+=== VERİ KALİTESİ SKORU ===
+
+1. Eksik Veri Skoru: %100.00
+2. Tutarlılık Skoru: %97.73
+3. Aykırı Değer Skoru: %98.43
+4. Veri Tipi Uygunluk Skoru: %100.00
+
+GENEL VERİ KALİTESİ SKORU: %99.00

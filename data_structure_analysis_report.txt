@@ -1,0 +1,375 @@
+=== FUTBOLCU YARALANMA VERİ SETİ DETAYLI ANALİZİ ===
+
+1. GENEL BİLGİLER
+Satır Sayısı: 1301
+Sütun Sayısı: 30
+Veri Seti Boyutu: 305.05 KB
+Toplam Veri Noktası Sayısı: 39030
+Bellek Kullanımı (Sütun Bazlı):
+Index                                  132
+p_id2                                79350
+start_year                           10408
+season_days_injured                  10408
+total_days_injured                   10408
+season_minutes_played                10408
+season_games_played                  10408
+season_matches_in_squad              10408
+total_minutes_played                 10408
+total_games_played                   10408
+dob                                  76759
+height_cm                            74746
+weight_kg                            10408
+nationality                          73998
+work_rate                            78285
+pace                                 10408
+physic                               10408
+fifa_rating                          10408
+position                             74962
+age                                  10408
+cumulative_minutes_played            10408
+cumulative_games_played              10408
+minutes_per_game_prev_seasons        10408
+avg_days_injured_prev_seasons        10408
+avg_games_per_season_prev_seasons    10408
+bmi                                  10408
+work_rate_numeric                    10408
+position_numeric                     10408
+significant_injury_prev_season       10408
+cumulative_days_injured              10408
+season_days_injured_prev_season      10408
+
+2. SÜTUNLAR VE VERİ TİPLERİ
+p_id2                                 object
+start_year                             int64
+season_days_injured                    int64
+total_days_injured                     int64
+season_minutes_played                float64
+season_games_played                    int64
+season_matches_in_squad                int64
+total_minutes_played                 float64
+total_games_played                     int64
+dob                                   object
+height_cm                             object
+weight_kg                            float64
+nationality                           object
+work_rate                             object
+pace                                 float64
+physic                               float64
+fifa_rating                          float64
+position                              object
+age                                    int64
+cumulative_minutes_played            float64
+cumulative_games_played              float64
+minutes_per_game_prev_seasons        float64
+avg_days_injured_prev_seasons        float64
+avg_games_per_season_prev_seasons    float64
+bmi                                  float64
+work_rate_numeric                    float64
+position_numeric                     float64
+significant_injury_prev_season       float64
+cumulative_days_injured              float64
+season_days_injured_prev_season      float64
+
+Sütun İsimleri:
+- p_id2
+- start_year
+- season_days_injured
+- total_days_injured
+- season_minutes_played
+- season_games_played
+- season_matches_in_squad
+- total_minutes_played
+- total_games_played
+- dob
+- height_cm
+- weight_kg
+- nationality
+- work_rate
+- pace
+- physic
+- fifa_rating
+- position
+- age
+- cumulative_minutes_played
+- cumulative_games_played
+- minutes_per_game_prev_seasons
+- avg_days_injured_prev_seasons
+- avg_games_per_season_prev_seasons
+- bmi
+- work_rate_numeric
+- position_numeric
+- significant_injury_prev_season
+- cumulative_days_injured
+- season_days_injured_prev_season
+
+3. EKSİK DEĞER ANALİZİ
+                                   Eksik Değer Sayısı  Eksik Değer Yüzdesi
+pace                                               95             7.302075
+physic                                             95             7.302075
+position                                            2             0.153728
+cumulative_minutes_played                         604            46.425826
+cumulative_games_played                           604            46.425826
+minutes_per_game_prev_seasons                     616            47.348194
+avg_days_injured_prev_seasons                     604            46.425826
+avg_games_per_season_prev_seasons                 604            46.425826
+position_numeric                                    2             0.153728
+significant_injury_prev_season                    604            46.425826
+cumulative_days_injured                           604            46.425826
+season_days_injured_prev_season                   604            46.425826
+
+Toplam Eksik Değer Sayısı: 5038
+Toplam Eksik Değer Yüzdesi: 12.91%
+
+4. TEMEL İSTATİSTİKLER
+            p_id2   start_year  season_days_injured  total_days_injured  season_minutes_played  season_games_played  season_matches_in_squad  total_minutes_played  total_games_played         dob height_cm    weight_kg nationality      work_rate         pace       physic  fifa_rating  position          age  cumulative_minutes_played  cumulative_games_played  minutes_per_game_prev_seasons  avg_days_injured_prev_seasons  avg_games_per_season_prev_seasons          bmi  work_rate_numeric  position_numeric  significant_injury_prev_season  cumulative_days_injured  season_days_injured_prev_season
+count        1301  1301.000000          1301.000000         1301.000000            1301.000000          1301.000000              1301.000000           1301.000000         1301.000000        1301      1301  1301.000000        1301           1301  1206.000000  1206.000000  1301.000000      1299  1301.000000                 697.000000               697.000000                     685.000000                     697.000000                         697.000000  1301.000000        1301.000000       1299.000000                      697.000000               697.000000                       697.000000
+unique        604          NaN                  NaN                 NaN                    NaN                  NaN                      NaN                   NaN                 NaN         588       166          NaN          61              8          NaN          NaN          NaN         4          NaN                        NaN                      NaN                            NaN                            NaN                                NaN          NaN                NaN               NaN                             NaN                      NaN                              NaN
+top     bendavies          NaN                  NaN                 NaN                    NaN                  NaN                      NaN                   NaN                 NaN  1993-06-22     185.0          NaN     England  Medium/Medium          NaN          NaN          NaN  Defender          NaN                        NaN                      NaN                            NaN                            NaN                                NaN          NaN                NaN               NaN                             NaN                      NaN                              NaN
+freq           24          NaN                  NaN                 NaN                    NaN                  NaN                      NaN                   NaN                 NaN           9        75          NaN         551            434          NaN          NaN          NaN       492          NaN                        NaN                      NaN                            NaN                            NaN                                NaN          NaN                NaN               NaN                             NaN                      NaN                              NaN
+mean          NaN  2018.099923            79.050730          260.710992            1483.156034            19.509608                25.089931           5533.593390           71.638739         NaN       NaN    76.833935         NaN            NaN    70.318173    70.837217    74.513682       NaN    26.637971                4156.717360                53.279770                      74.541947                      79.501987                          21.952038    23.039310           3.346272          1.823711                        0.225251               786.351506                        81.279770
+std           NaN     1.384810            84.578169          202.741896            1014.013920            11.099727                10.157698           4095.421082           46.854260         NaN       NaN     7.362975         NaN            NaN    10.899225     8.172575     5.784240       NaN     3.937247                5075.930084                63.111519                      17.856054                      71.057640                           9.408793     1.470255           0.392971          0.999472                        0.418048              1064.323175                        84.353614
+min           NaN  2016.000000             0.000000            3.000000               0.000000             0.000000                 1.000000              0.000000            0.000000         NaN       NaN    58.000000         NaN            NaN    28.333333    40.750000    53.000000       NaN    17.000000                   0.000000                 0.000000                       7.000000                       2.000000                           0.000000    18.792451           2.500000          0.000000                        0.000000                 7.000000                         0.000000
+25%           NaN  2017.000000            24.000000          111.000000             612.000000            10.000000                19.000000           2012.000000           31.000000         NaN       NaN    72.000000         NaN            NaN    64.000000    66.666667    71.333333       NaN    24.000000                1463.000000                23.000000                      65.500000                      29.000000                          16.000000    22.093170           3.000000          1.000000                        0.000000               191.000000                        26.000000
+50%           NaN  2018.000000            49.000000          210.000000            1440.000000            21.000000                28.000000           5023.000000           69.000000         NaN       NaN    76.000000         NaN            NaN    71.000000    72.333333    75.166667       NaN    27.000000                2755.000000                35.000000                      80.080645                      60.500000                          23.000000    23.074830           3.500000          2.000000                        0.000000               427.000000                        50.000000
+75%           NaN  2019.000000           103.000000          370.000000            2311.000000            29.000000                33.000000           8387.000000          107.000000         NaN       NaN    82.000000         NaN            NaN    77.833333    76.500000    78.500000       NaN    29.000000                4982.000000                64.000000                      87.925926                     111.500000                          29.000000    23.947116           3.500000          3.000000                        0.000000               903.000000                       109.000000
+max           NaN  2020.000000           702.000000         2398.000000            3610.000000            38.000000                54.000000          16768.000000          179.000000         NaN       NaN    99.000000         NaN            NaN    93.000000    88.166667    89.500000       NaN    39.000000               39102.000000               508.000000                      95.000000                     702.000000                          38.000000    28.525475           4.000000          3.000000                        1.000000              7590.000000                       702.000000
+
+5. KATEGORİK DEĞİŞKEN BİLGİLERİ
+
+p_id2:
+Unique değer sayısı: 604
+İlk 5 unique değer: ['aaronconnolly' 'aaroncresswell' 'aaronlennon' 'aaronmooy'
+ 'aaronramsdale']
+Değer dağılımı:
+p_id2
+bendavies       24
+dannyrose       18
+adamsmith       12
+dannyward       12
+jamescollins     8
+En sık görülen değer: bendavies
+
+
+dob:
+Unique değer sayısı: 588
+İlk 5 unique değer: ['2000-01-28' '1989-12-15' '1987-04-16' '1990-09-15' '1998-05-14']
+Değer dağılımı:
+dob
+1993-06-22    9
+1995-08-11    8
+1993-04-24    8
+1981-05-27    8
+1993-11-07    8
+En sık görülen değer: 1993-06-22
+
+
+height_cm:
+Unique değer sayısı: 166
+İlk 5 unique değer: ['175.33333333333334' '171.66666666666666' '165.0' '173.83333333333334'
+ '188.0']
+Değer dağılımı:
+height_cm
+185.0    75
+183.0    66
+180.0    64
+178.0    57
+188.0    45
+En sık görülen değer: 185.0
+
+
+nationality:
+Unique değer sayısı: 61
+İlk 5 unique değer: ['Republic of Ireland' 'England' 'Australia' 'Wales' 'Germany']
+Değer dağılımı:
+nationality
+England                551
+France                  87
+Republic of Ireland     55
+Scotland                52
+Netherlands             51
+En sık görülen değer: England
+
+
+work_rate:
+Unique değer sayısı: 8
+İlk 5 unique değer: ['Medium/Low' 'High/Medium' 'High/High' 'Medium/Medium' 'Medium/High']
+Değer dağılımı:
+work_rate
+Medium/Medium    434
+High/Medium      337
+Medium/High      209
+High/High        206
+Low/Medium        29
+En sık görülen değer: Medium/Medium
+
+
+position:
+Unique değer sayısı: 4
+İlk 5 unique değer: ['Forward' 'Defender' 'Midfielder' 'Goalkeeper' nan]
+Değer dağılımı:
+position
+Defender      492
+Midfielder    457
+Forward       253
+Goalkeeper     97
+En sık görülen değer: Defender
+
+
+6. AYKIRI DEĞER BİLGİLERİ
+
+season_days_injured:
+Aykırı değer sayısı: 98
+Aykırı değer yüzdesi: 7.53%
+Aykırı değer aralığı: [222.00, 702.00]
+Normal aralık: [-94.50, 221.50]
+
+total_days_injured:
+Aykırı değer sayısı: 38
+Aykırı değer yüzdesi: 2.92%
+Aykırı değer aralığı: [778.00, 2398.00]
+Normal aralık: [-277.50, 758.50]
+
+weight_kg:
+Aykırı değer sayısı: 10
+Aykırı değer yüzdesi: 0.77%
+Aykırı değer aralığı: [97.67, 99.00]
+Normal aralık: [57.00, 97.00]
+
+pace:
+Aykırı değer sayısı: 27
+Aykırı değer yüzdesi: 2.08%
+Aykırı değer aralığı: [28.33, 42.60]
+Normal aralık: [43.25, 98.58]
+
+physic:
+Aykırı değer sayısı: 38
+Aykırı değer yüzdesi: 2.92%
+Aykırı değer aralığı: [40.75, 51.67]
+Normal aralık: [51.92, 91.25]
+
+fifa_rating:
+Aykırı değer sayısı: 23
+Aykırı değer yüzdesi: 1.77%
+Aykırı değer aralığı: [53.00, 89.50]
+Normal aralık: [60.58, 89.25]
+
+age:
+Aykırı değer sayısı: 8
+Aykırı değer yüzdesi: 0.61%
+Aykırı değer aralığı: [37.00, 39.00]
+Normal aralık: [16.50, 36.50]
+
+cumulative_minutes_played:
+Aykırı değer sayısı: 48
+Aykırı değer yüzdesi: 3.69%
+Aykırı değer aralığı: [10354.00, 39102.00]
+Normal aralık: [-3815.50, 10260.50]
+
+cumulative_games_played:
+Aykırı değer sayısı: 43
+Aykırı değer yüzdesi: 3.31%
+Aykırı değer aralığı: [127.00, 508.00]
+Normal aralık: [-38.50, 125.50]
+
+minutes_per_game_prev_seasons:
+Aykırı değer sayısı: 18
+Aykırı değer yüzdesi: 1.38%
+Aykırı değer aralığı: [7.00, 31.26]
+Normal aralık: [31.86, 121.56]
+
+avg_days_injured_prev_seasons:
+Aykırı değer sayısı: 25
+Aykırı değer yüzdesi: 1.92%
+Aykırı değer aralığı: [240.33, 702.00]
+Normal aralık: [-94.75, 235.25]
+
+bmi:
+Aykırı değer sayısı: 17
+Aykırı değer yüzdesi: 1.31%
+Aykırı değer aralığı: [18.79, 28.53]
+Normal aralık: [19.31, 26.73]
+
+significant_injury_prev_season:
+Aykırı değer sayısı: 157
+Aykırı değer yüzdesi: 12.07%
+Aykırı değer aralığı: [1.00, 1.00]
+Normal aralık: [0.00, 0.00]
+
+cumulative_days_injured:
+Aykırı değer sayısı: 60
+Aykırı değer yüzdesi: 4.61%
+Aykırı değer aralığı: [1980.00, 7590.00]
+Normal aralık: [-877.00, 1971.00]
+
+season_days_injured_prev_season:
+Aykırı değer sayısı: 47
+Aykırı değer yüzdesi: 3.61%
+Aykırı değer aralığı: [236.00, 702.00]
+Normal aralık: [-98.50, 233.50]
+
+7. VERİ TUTARLILIĞI KONTROLÜ
+
+Doğum tarihi analizi:
+En küçük tarih: 1979-12-05
+En büyük tarih: 2002-06-27
+
+Boy ve kilo değerleri:
+Boy aralığı: [163.00, 203.00] cm
+Kilo aralığı: [58.00, 99.00] kg
+
+BMI İstatistikleri:
+Ortalama BMI: 23.04
+BMI aralığı: [18.79, 28.53]
+
+8. KORELASYON BİLGİLERİ
+
+Tüm Korelasyonlar:
+                                   start_year  season_days_injured  total_days_injured  season_minutes_played  season_games_played  season_matches_in_squad  total_minutes_played  total_games_played  weight_kg      pace    physic  fifa_rating       age  cumulative_minutes_played  cumulative_games_played  minutes_per_game_prev_seasons  avg_days_injured_prev_seasons  avg_games_per_season_prev_seasons       bmi  work_rate_numeric  position_numeric  significant_injury_prev_season  cumulative_days_injured  season_days_injured_prev_season
+start_year                           1.000000            -0.111305           -0.107074               0.032890             0.046429                 0.123934              0.076634            0.078305  -0.089258  0.102651 -0.121082    -0.145419 -0.010431                   0.144240                 0.156617                      -0.067584                      -0.031176                           0.036797 -0.098841           0.030369         -0.029820                       -0.064948                 0.079177                        -0.041809
+season_days_injured                 -0.111305             1.000000            0.486199              -0.328282            -0.360381                -0.475523             -0.173577           -0.168798   0.019699 -0.059692  0.009574    -0.054316  0.022169                   0.050787                 0.053567                      -0.027670                       0.131220                          -0.089847  0.004743          -0.018107          0.003328                        0.189084                 0.240429                         0.188183
+total_days_injured                  -0.107074             0.486199            1.000000              -0.178956            -0.184035                -0.241867             -0.064658           -0.039749   0.046872 -0.017778  0.138334     0.120667  0.033099                  -0.001533                 0.009795                      -0.092268                       0.593690                          -0.282932  0.014584           0.060249         -0.022958                        0.389673                 0.413155                         0.505933
+season_minutes_played                0.032890            -0.328282           -0.178956               1.000000             0.941826                 0.734875              0.664471            0.612979  -0.015760  0.056277  0.195530     0.287777  0.074337                   0.168249                 0.125290                       0.366343                      -0.268113                           0.468198 -0.003804           0.125467         -0.032668                       -0.258698                -0.137370                        -0.278717
+season_games_played                  0.046429            -0.360381           -0.184035               0.941826             1.000000                 0.806084              0.604740            0.619007  -0.061264  0.132314  0.136872     0.293009  0.042227                   0.138014                 0.117285                       0.194823                      -0.251518                           0.469547  0.013773           0.162937          0.121018                       -0.245747                -0.137442                        -0.275021
+season_matches_in_squad              0.123934            -0.475523           -0.241867               0.734875             0.806084                 1.000000              0.465227            0.472119  -0.002042  0.091265  0.113007     0.206470  0.098292                   0.109804                 0.105244                       0.132330                      -0.193726                           0.255864  0.050223           0.084211         -0.029550                       -0.233153                -0.039145                        -0.268250
+total_minutes_played                 0.076634            -0.173577           -0.064658               0.664471             0.604740                 0.465227              1.000000            0.964674  -0.000125  0.065708  0.305633     0.439725  0.158725                   0.355297                 0.297874                       0.538401                      -0.283539                           0.617103 -0.011841           0.176952         -0.083156                       -0.210711                -0.008049                        -0.216592
+total_games_played                   0.078305            -0.168798           -0.039749               0.612979             0.619007                 0.472119              0.964674            1.000000  -0.040212  0.129691  0.266260     0.452406  0.133662                   0.340038                 0.308459                       0.373143                      -0.276212                           0.643320 -0.005523           0.218759          0.042268                       -0.204905                 0.002416                        -0.209992
+weight_kg                           -0.089258             0.019699            0.046872              -0.015760            -0.061264                -0.002042             -0.000125           -0.040212   1.000000 -0.416607  0.588023     0.234708  0.264294                  -0.139166                -0.144345                       0.045176                       0.063407                          -0.044277  0.621517          -0.184922         -0.335196                        0.045479                -0.090113                         0.046190
+pace                                 0.102651            -0.059692           -0.017778               0.056277             0.132314                 0.091265              0.065708            0.129691  -0.416607  1.000000 -0.318937     0.073801 -0.337861                   0.016667                 0.034631                      -0.150219                      -0.063956                           0.103406 -0.064725           0.210227          0.129164                       -0.064674                -0.010745                        -0.059724
+physic                              -0.121082             0.009574            0.138334               0.195530             0.136872                 0.113007              0.305633            0.266260   0.588023 -0.318937  1.000000     0.517177  0.391696                   0.032856                 0.011055                       0.231828                      -0.011667                           0.139140  0.252777           0.128674         -0.238780                        0.020677                -0.000082                         0.027138
+fifa_rating                         -0.145419            -0.054316            0.120667               0.287777             0.293009                 0.206470              0.439725            0.452406   0.234708  0.073801  0.517177     1.000000  0.347442                  -0.097911                -0.117660                       0.203606                      -0.114576                           0.352999  0.200498           0.143706          0.042252                       -0.040953                -0.206322                        -0.061753
+age                                 -0.010431             0.022169            0.033099               0.074337             0.042227                 0.098292              0.158725            0.133662   0.264294 -0.337861  0.391696     0.347442  1.000000                   0.124621                 0.113210                       0.221213                       0.013211                           0.124292  0.290045           0.023662         -0.107231                        0.055801                 0.084422                         0.060680
+cumulative_minutes_played            0.144240             0.050787           -0.001533               0.168249             0.138014                 0.109804              0.355297            0.340038  -0.139166  0.016667  0.032856    -0.097911  0.124621                   1.000000                 0.990999                       0.263875                      -0.100897                           0.266382 -0.048026           0.021859         -0.118825                       -0.016589                 0.788320                         0.000378
+cumulative_games_played              0.156617             0.053567            0.009795               0.125290             0.117285                 0.105244              0.297874            0.308459  -0.144345  0.034631  0.011055    -0.117660  0.113210                   0.990999                 1.000000                       0.167008                      -0.085291                           0.240545 -0.047177           0.029073         -0.080974                       -0.007348                 0.813349                         0.005878
+minutes_per_game_prev_seasons       -0.067584            -0.027670           -0.092268               0.366343             0.194823                 0.132330              0.538401            0.373143   0.045176 -0.150219  0.231828     0.203606  0.221213                   0.263875                 0.167008                       1.000000                      -0.178796                           0.417408 -0.012933          -0.069610         -0.321282                       -0.083300                -0.003797                        -0.087138
+avg_days_injured_prev_seasons       -0.031176             0.131220            0.593690              -0.268113            -0.251518                -0.193726             -0.283539           -0.276212   0.063407 -0.063956 -0.011667    -0.114576  0.013211                  -0.100897                -0.085291                      -0.178796                       1.000000                          -0.493663 -0.007204          -0.025571         -0.020355                        0.645592                 0.254618                         0.827110
+avg_games_per_season_prev_seasons    0.036797            -0.089847           -0.282932               0.468198             0.469547                 0.255864              0.617103            0.643320  -0.044277  0.103406  0.139140     0.352999  0.124292                   0.266382                 0.240545                       0.417408                      -0.493663                           1.000000  0.069074           0.179878          0.179751                       -0.322534                -0.139666                        -0.363331
+bmi                                 -0.098841             0.004743            0.014584              -0.003804             0.013773                 0.050223             -0.011841           -0.005523   0.621517 -0.064725  0.252777     0.200498  0.290045                  -0.048026                -0.047177                      -0.012933                      -0.007204                           0.069074  1.000000           0.031041         -0.035350                        0.028962                -0.029089                         0.014790
+work_rate_numeric                    0.030369            -0.018107            0.060249               0.125467             0.162937                 0.084211              0.176952            0.218759  -0.184922  0.210227  0.128674     0.143706  0.023662                   0.021859                 0.029073                      -0.069610                      -0.025571                           0.179878  0.031041           1.000000          0.203804                       -0.040647                -0.003582                        -0.012182
+position_numeric                    -0.029820             0.003328           -0.022958              -0.032668             0.121018                -0.029550             -0.083156            0.042268  -0.335196  0.129164 -0.238780     0.042252 -0.107231                  -0.118825                -0.080974                      -0.321282                      -0.020355                           0.179751 -0.035350           0.203804          1.000000                        0.023386                -0.106536                        -0.008952
+significant_injury_prev_season      -0.064948             0.189084            0.389673              -0.258698            -0.245747                -0.233153             -0.210711           -0.204905   0.045479 -0.064674  0.020677    -0.040953  0.055801                  -0.016589                -0.007348                      -0.083300                       0.645592                          -0.322534  0.028962          -0.040647          0.023386                        1.000000                 0.193224                         0.809256
+cumulative_days_injured              0.079177             0.240429            0.413155              -0.137370            -0.137442                -0.039145             -0.008049            0.002416  -0.090113 -0.010745 -0.000082    -0.206322  0.084422                   0.788320                 0.813349                      -0.003797                       0.254618                          -0.139666 -0.029089          -0.003582         -0.106536                        0.193224                 1.000000                         0.251756
+season_days_injured_prev_season     -0.041809             0.188183            0.505933              -0.278717            -0.275021                -0.268250             -0.216592           -0.209992   0.046190 -0.059724  0.027138    -0.061753  0.060680                   0.000378                 0.005878                      -0.087138                       0.827110                          -0.363331  0.014790          -0.012182         -0.008952                        0.809256                 0.251756                         1.000000
+
+Yüksek korelasyonlu değişkenler (>0.7):
+season_minutes_played - season_games_played: 0.94
+season_minutes_played - season_matches_in_squad: 0.73
+season_games_played - season_minutes_played: 0.94
+season_games_played - season_matches_in_squad: 0.81
+season_matches_in_squad - season_minutes_played: 0.73
+season_matches_in_squad - season_games_played: 0.81
+total_minutes_played - total_games_played: 0.96
+total_games_played - total_minutes_played: 0.96
+cumulative_minutes_played - cumulative_games_played: 0.99
+cumulative_minutes_played - cumulative_days_injured: 0.79
+cumulative_games_played - cumulative_minutes_played: 0.99
+cumulative_games_played - cumulative_days_injured: 0.81
+avg_days_injured_prev_seasons - season_days_injured_prev_season: 0.83
+significant_injury_prev_season - season_days_injured_prev_season: 0.81
+cumulative_days_injured - cumulative_minutes_played: 0.79
+cumulative_days_injured - cumulative_games_played: 0.81
+season_days_injured_prev_season - avg_days_injured_prev_seasons: 0.83
+season_days_injured_prev_season - significant_injury_prev_season: 0.81
+
+9. VERİ KALİTESİ SKORU
+Veri Tamlık Skoru: 87.09%
+Veri Benzersizlik Skoru: 20.35%
