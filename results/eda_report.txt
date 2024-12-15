@@ -1,0 +1,146 @@
+=== DETAILED DATA ANALYSIS REPORT ===
+
+1. INJURY DURATION DISTRIBUTION ANALYSIS
+- Mean injury duration: 79.22 days
+- Median injury duration: 49.00 days
+- Standard deviation: 84.25 days
+- Distribution is right-skewed (positive skewness)
+- Most injuries last between 0-100 days
+- Maximum injury duration: 670 days
+
+2. ANALYSIS BY POSITION
+
+Forward Position:
+- Average injury duration: 71.39 days
+- Median injury duration: 44.50 days
+- Number of outliers: 9
+- Highest outlier value: 337 days
+
+Defender Position:
+- Average injury duration: 82.10 days
+- Median injury duration: 49.00 days
+- Number of outliers: 22
+- Highest outlier value: 670 days
+
+Midfielder Position:
+- Average injury duration: 81.80 days
+- Median injury duration: 53.50 days
+- Number of outliers: 12
+- Highest outlier value: 502 days
+
+Goalkeeper Position:
+- Average injury duration: 71.76 days
+- Median injury duration: 45.00 days
+- Number of outliers: 3
+- Highest outlier value: 325 days
+
+3. AGE-INJURY RELATIONSHIP
+
+<20 age group:
+- Average injury duration: 85.53 days
+- Median injury duration: 63.00 days
+- Number of players: 19.0
+
+20-25 age group:
+- Average injury duration: 71.93 days
+- Median injury duration: 46.00 days
+- Number of players: 180.0
+
+25-30 age group:
+- Average injury duration: 86.77 days
+- Median injury duration: 55.00 days
+- Number of players: 338.0
+
+30-35 age group:
+- Average injury duration: 66.68 days
+- Median injury duration: 42.50 days
+- Number of players: 110.0
+
+>35 age group:
+- Average injury duration: 80.43 days
+- Median injury duration: 93.50 days
+- Number of players: 14.0
+
+4. FIFA RATING ANALYSIS
+
+<65 rating group:
+- Average injury duration: 97.97 days
+- Median injury duration: 67.00 days
+- Number of players: 36.0
+
+65-70 rating group:
+- Average injury duration: 68.36 days
+- Median injury duration: 39.00 days
+- Number of players: 61.0
+
+70-75 rating group:
+- Average injury duration: 88.09 days
+- Median injury duration: 56.00 days
+- Number of players: 168.0
+
+75-80 rating group:
+- Average injury duration: 80.06 days
+- Median injury duration: 49.50 days
+- Number of players: 272.0
+
+80-85 rating group:
+- Average injury duration: 65.51 days
+- Median injury duration: 46.00 days
+- Number of players: 99.0
+
+85-90 rating group:
+- Average injury duration: 64.24 days
+- Median injury duration: 32.00 days
+- Number of players: 25.0
+
+5. BMI DISTRIBUTION ANALYSIS
+- BMI range: 19.0 - 28.5
+- Average BMI: 23.1
+- Median BMI: 23.1
+- Standard deviation: 1.5
+
+6. PACE AND PHYSIC ANALYSIS
+
+Forward Position:
+- Average Pace: 75.9
+- Average Physic: 71.7
+- Pace range: 40-93
+- Physic range: 46-84
+
+Defender Position:
+- Average Pace: 68.2
+- Average Physic: 74.1
+- Pace range: 38-93
+- Physic range: 52-87
+
+Midfielder Position:
+- Average Pace: 70.9
+- Average Physic: 69.6
+- Pace range: 46-89
+- Physic range: 46-88
+
+Goalkeeper Position:
+- Average Pace: 72.7
+- Average Physic: 54.1
+- Pace range: 72-73
+- Physic range: 53-62
+
+7. PREVIOUS SEASON INJURY ANALYSIS
+
+Players without Significant Injury:
+- Number of players: 515
+- Average injury duration: 72.1 days
+- Median injury duration: 45.0 days
+- Maximum injury duration: 535 days
+
+Players with Significant Injury:
+- Number of players: 146
+- Average injury duration: 104.2 days
+- Median injury duration: 71.0 days
+- Maximum injury duration: 670 days
+
+8. SEASON MINUTES-INJURY ANALYSIS
+- Average minutes played: 1582.6
+- Median minutes played: 1608.0
+- Maximum minutes played: 3610
+- Minimum minutes played: 0

@@ -1,10 +1,10 @@
-=== VERİ TEMİZLEME RAPORU ===
+=== DATA CLEANING REPORT ===
 
-BAŞLANGIÇ DURUMU:
-Satır Sayısı: 1301
-Sütun Sayısı: 30
+INITIAL STATE:
+Number of Rows: 1301
+Number of Columns: 30
 
-Eksik Değerler:
+Missing Values:
 p_id                                   0
 start_year                             0
 season_days_injured                    0
@@ -36,7 +36,7 @@ significant_injury_prev_season       604
 cumulative_days_injured              604
 season_days_injured_prev_season      604
 
-ÖNEMLİ SÜTUNLARDA EKSİK DEĞERLER:
+MISSING VALUES IN IMPORTANT COLUMNS:
 cumulative_minutes_played: 604 (%46.43)
 cumulative_games_played: 604 (%46.43)
 avg_days_injured_prev_seasons: 604 (%46.43)
@@ -46,15 +46,15 @@ cumulative_days_injured: 604 (%46.43)
 season_days_injured_prev_season: 604 (%46.43)
 minutes_per_game_prev_seasons: 616 (%47.35)
 
-KALDIRILAN SATIRLAR:
-Toplam kaldırılan satır sayısı: 616
-Kaldırılan satır yüzdesi: %47.35
+REMOVED ROWS:
+Total rows removed: 616
+Percentage of rows removed: %47.35
 
-TEMİZLEME SONRASI DURUM:
-Kalan satır sayısı: 685
-Sütun sayısı: 30
+STATE AFTER CLEANING:
+Remaining rows: 685
+Number of columns: 30
 
-Kalan Eksik Değerler:
+Remaining Missing Values:
 p_id                                  0
 start_year                            0
 season_days_injured                   0
@@ -86,11 +86,11 @@ significant_injury_prev_season        0
 cumulative_days_injured               0
 season_days_injured_prev_season       0
 
-=== P_ID VE DOB TUTARSIZLIK ANALİZİ ===
+=== P_ID AND DOB CONSISTENCY ANALYSIS ===
 
-Farklı doğum tarihi olan p_id sayısı: 11
+Number of p_ids with different DOBs: 11
 
-Tutarsız kayıtların detayları:
+Details of inconsistent records:
 
 P_ID: adamsmith
          p_id         dob nationality    position  age  fifa_rating
@@ -105,8 +105,8 @@ P_ID: adamsmith
 35  adamsmith  1991-04-29     England  Goalkeeper   28    73.333333
 36  adamsmith  1992-11-23     England    Defender   27    62.600000
 37  adamsmith  1992-11-23     England  Goalkeeper   27    62.600000
-Yeni P_ID oluşturuldu (birth year): adamsmith_1991
-Yeni P_ID oluşturuldu (birth year): adamsmith_1992
+New P_ID created: adamsmith_1991
+New P_ID created: adamsmith_1992
 P_ID: bendavies
           p_id         dob nationality  position  age  fifa_rating
 137  bendavies  1981-05-27     England  Defender   35    65.000000
@@ -132,9 +132,9 @@ P_ID: bendavies
 157  bendavies  1993-04-24       Wales  Defender   27    78.666667
 158  bendavies  1995-08-11     England  Defender   25    68.000000
 159  bendavies  1995-08-11     England  Defender   25    68.000000
-Yeni P_ID oluşturuldu (birth year): bendavies_1981
-Yeni P_ID oluşturuldu (birth year): bendavies_1993
-Yeni P_ID oluşturuldu (birth year): bendavies_1995
+New P_ID created: bendavies_1981
+New P_ID created: bendavies_1993
+New P_ID created: bendavies_1995
 P_ID: callumwilson
              p_id         dob nationality position  age  fifa_rating
 199  callumwilson  1997-07-02     England  Forward   19    53.000000
@@ -144,15 +144,15 @@ P_ID: callumwilson
 203  callumwilson  1997-07-02     England  Forward   22    53.000000
 204  callumwilson  1992-02-27     England  Forward   28    76.833333
 205  callumwilson  1997-07-02     England  Forward   23    53.000000
-Yeni P_ID oluşturuldu (birth year): callumwilson_1997
-Yeni P_ID oluşturuldu (birth year): callumwilson_1992
+New P_ID created: callumwilson_1997
+New P_ID created: callumwilson_1992
 P_ID: claudiobravo
              p_id         dob nationality    position  age  fifa_rating
 256  claudiobravo  1997-03-13   Argentina  Goalkeeper   19        65.25
 257  claudiobravo  1983-04-13       Chile  Goalkeeper   35        80.50
 258  claudiobravo  1997-03-13   Argentina  Goalkeeper   21        65.25
-Yeni P_ID oluşturuldu (birth year): claudiobravo_1997
-Yeni P_ID oluşturuldu (birth year): claudiobravo_1983
+New P_ID created: claudiobravo_1997
+New P_ID created: claudiobravo_1983
 P_ID: dannyrose
           p_id         dob nationality    position  age  fifa_rating
 297  dannyrose  1990-07-02     England  Midfielder   26    79.666667
@@ -172,9 +172,9 @@ P_ID: dannyrose
 311  dannyrose  1993-12-10     England  Midfielder   25    63.666667
 312  dannyrose  1988-02-21     England    Defender   30    63.333333
 313  dannyrose  1988-02-21     England  Midfielder   30    63.333333
-Yeni P_ID oluşturuldu (birth year): dannyrose_1990
-Yeni P_ID oluşturuldu (birth year): dannyrose_1993
-Yeni P_ID oluşturuldu (birth year): dannyrose_1988
+New P_ID created: dannyrose_1990
+New P_ID created: dannyrose_1993
+New P_ID created: dannyrose_1988
 P_ID: dannyward
           p_id         dob nationality    position  age  fifa_rating
 320  dannyward  1990-12-09     England  Goalkeeper   28    68.166667
@@ -184,8 +184,8 @@ P_ID: dannyward
 324  dannyward  1990-12-09     England  Goalkeeper   30    68.166667
 325  dannyward  1993-06-22       Wales     Forward   27    68.833333
 326  dannyward  1993-06-22       Wales  Goalkeeper   27    68.833333
-Yeni P_ID oluşturuldu (birth year): dannyward_1990
-Yeni P_ID oluşturuldu (birth year): dannyward_1993
+New P_ID created: dannyward_1990
+New P_ID created: dannyward_1993
 P_ID: dannywilliams
               p_id         dob    nationality    position  age  fifa_rating
 333  dannywilliams  1989-03-08  United States  Midfielder   28        70.50
@@ -195,8 +195,8 @@ P_ID: dannywilliams
 337  dannywilliams  1989-03-08  United States  Midfielder   29        70.50
 338  dannywilliams  1988-01-25        England  Midfielder   30        62.25
 339  dannywilliams  1988-01-25        England  Midfielder   30        62.25
-Yeni P_ID oluşturuldu (birth year): dannywilliams_1989
-Yeni P_ID oluşturuldu (birth year): dannywilliams_1988
+New P_ID created: dannywilliams_1989
+New P_ID created: dannywilliams_1988
 P_ID: jamescollins
              p_id         dob          nationality  position  age  fifa_rating
 558  jamescollins  1983-08-23                Wales  Defender   33    75.666667
@@ -206,8 +206,8 @@ P_ID: jamescollins
 562  jamescollins  1983-08-23                Wales  Defender   34    75.666667
 563  jamescollins  1990-12-01  Republic of Ireland   Forward   27    67.666667
 564  jamescollins  1990-12-01  Republic of Ireland  Defender   27    67.666667
-Yeni P_ID oluşturuldu (birth year): jamescollins_1983
-Yeni P_ID oluşturuldu (birth year): jamescollins_1990
+New P_ID created: jamescollins_1983
+New P_ID created: jamescollins_1990
 P_ID: reecejames
             p_id         dob nationality  position  age  fifa_rating
 1039  reecejames  1993-11-07     England  Defender   26         68.5
@@ -217,30 +217,30 @@ P_ID: reecejames
 1043  reecejames  1993-11-07     England  Defender   27         68.5
 1044  reecejames  1999-12-08     England  Defender   21         68.0
 1045  reecejames  1999-12-08     England  Defender   21         68.0
-Yeni P_ID oluşturuldu (birth year): reecejames_1993
-Yeni P_ID oluşturuldu (birth year): reecejames_1999
+New P_ID created: reecejames_1993
+New P_ID created: reecejames_1999
 P_ID: sergioromero
               p_id         dob nationality    position  age  fifa_rating
 1126  sergioromero  1988-11-22    Colombia  Goalkeeper   29    66.400000
 1127  sergioromero  1987-02-22   Argentina  Goalkeeper   31    79.166667
 1128  sergioromero  1988-11-22    Colombia  Goalkeeper   30    66.400000
-Yeni P_ID oluşturuldu (birth year): sergioromero_1988
-Yeni P_ID oluşturuldu (birth year): sergioromero_1987
+New P_ID created: sergioromero_1988
+New P_ID created: sergioromero_1987
 P_ID: tommysmith
             p_id         dob  nationality  position  age  fifa_rating
 1219  tommysmith  1990-03-31  New Zealand   Forward   28    69.666667
 1220  tommysmith  1992-04-14      England  Defender   26    70.500000
 1221  tommysmith  1992-04-14      England   Forward   26    70.500000
-Yeni P_ID oluşturuldu (birth year): tommysmith_1990
-Yeni P_ID oluşturuldu (birth year): tommysmith_1992
+New P_ID created: tommysmith_1990
+New P_ID created: tommysmith_1992
 
-=== P_ID YENİDEN İSİMLENDİRME SONRASI DURUM ===
+=== STATE AFTER P_ID RENAMING ===
 
-Tüm P_ID ve DOB tutarsızlıkları düzeltildi.
-FIFA Rating tutarsızlığı bulunmamaktadır.
+All P_ID and DOB inconsistencies resolved.
+No FIFA Rating inconsistencies found.
 
-Position tutarsızlığı olan p_id sayısı: 11
-Tutarsız kayıtların detayları:
+Number of p_ids with Position inconsistency: 11
+Details of inconsistent records:
 
 P_ID: adamsmith_1991
               p_id         dob    position  start_year
@@ -312,17 +312,17 @@ P_ID: tommysmith_1992
 1220  tommysmith_1992  1992-04-14  Defender        2018
 1221  tommysmith_1992  1992-04-14   Forward        2018
 
-Belirtilen p_id-position eşleşmeleri dışındaki kayıtlar silindi.
+Records with incorrect position mappings removed.
 
-=== KAYIT SİLME SONRASI POSITION KONTROLÜ ===
+=== POSITION CHECK AFTER RECORD REMOVAL ===
 
-Tüm position tutarsızlıkları giderildi.
+All position inconsistencies resolved.
 
-=== PACE VE PHYSIC EKSİK DEĞER ANALİZİ ===
+=== PACE AND PHYSIC MISSING VALUE ANALYSIS ===
 
-Her iki sütunda da eksik olan satır sayısı: 37
+Number of rows missing both values: 37
 
-Eksik değer olan satırların detayları:
+Details of rows with missing values:
                      p_id    position  age  fifa_rating  pace  physic
 29         adamsmith_1992  Goalkeeper   25    62.600000   NaN     NaN
 33         adamsmith_1992  Goalkeeper   26    62.600000   NaN     NaN
@@ -362,286 +362,286 @@ Eksik değer olan satırların detayları:
 1253       waynehennessey  Goalkeeper   31    74.500000   NaN     NaN
 1254       waynehennessey  Goalkeeper   33    74.500000   NaN     NaN
 
-=== AYNI P_ID'DEN PACE VE PHYSIC DOLDURMA ===
+=== FILLING PACE AND PHYSIC FROM SAME P_ID ===
 
 
-Toplam 0 kayıt dolduruldu.
+Total 0 records filled.
 
-=== BENZER OYUNCULARDAN PACE VE PHYSIC DOLDURMA ===
+=== FILLING PACE AND PHYSIC FROM SIMILAR PLAYERS ===
 
 P_ID: adamsmith_1992
-Benzer oyuncu P_ID: claudiobravo_1997
-Benzerlik özellikleri:
-  Yaş farkı: 4.00
-  BMI farkı: 4.35
-  Rating farkı: 2.65
-Doldurulan değerler - Pace: 71.75, Physic: 61.75
+Similar player P_ID: claudiobravo_1997
+Similarity metrics:
+  Age difference: 4.00
+  BMI difference: 4.35
+  Rating difference: 2.65
+Filled values - Pace: 71.75, Physic: 61.75
 P_ID: adamsmith_1992
-Benzer oyuncu P_ID: adamsmith_1992
-Benzerlik özellikleri:
-  Yaş farkı: 1.00
-  BMI farkı: 0.00
-  Rating farkı: 0.00
-Doldurulan değerler - Pace: 71.75, Physic: 61.75
+Similar player P_ID: adamsmith_1992
+Similarity metrics:
+  Age difference: 1.00
+  BMI difference: 0.00
+  Rating difference: 0.00
+Filled values - Pace: 71.75, Physic: 61.75
 P_ID: adamsmith_1992
-Benzer oyuncu P_ID: adamsmith_1992
-Benzerlik özellikleri:
-  Yaş farkı: 1.00
-  BMI farkı: 0.00
-  Rating farkı: 0.00
-Doldurulan değerler - Pace: 71.75, Physic: 61.75
+Similar player P_ID: adamsmith_1992
+Similarity metrics:
+  Age difference: 1.00
+  BMI difference: 0.00
+  Rating difference: 0.00
+Filled values - Pace: 71.75, Physic: 61.75
 P_ID: alexmccarthy
-Benzer oyuncu P_ID: sergioromero_1988
-Benzerlik özellikleri:
-  Yaş farkı: 0.00
-  BMI farkı: 2.07
-  Rating farkı: 9.60
-Doldurulan değerler - Pace: 72.8, Physic: 53.0
+Similar player P_ID: sergioromero_1988
+Similarity metrics:
+  Age difference: 0.00
+  BMI difference: 2.07
+  Rating difference: 9.60
+Filled values - Pace: 72.8, Physic: 53.0
 P_ID: alexmccarthy
-Benzer oyuncu P_ID: alexmccarthy
-Benzerlik özellikleri:
-  Yaş farkı: 1.00
-  BMI farkı: 0.00
-  Rating farkı: 0.00
-Doldurulan değerler - Pace: 72.8, Physic: 53.0
+Similar player P_ID: alexmccarthy
+Similarity metrics:
+  Age difference: 1.00
+  BMI difference: 0.00
+  Rating difference: 0.00
+Filled values - Pace: 72.8, Physic: 53.0
 P_ID: berndleno
-Benzer oyuncu P_ID: alexmccarthy
-Benzerlik özellikleri:
-  Yaş farkı: 3.00
-  BMI farkı: 1.69
-  Rating farkı: 8.67
-Doldurulan değerler - Pace: 72.8, Physic: 53.0
+Similar player P_ID: alexmccarthy
+Similarity metrics:
+  Age difference: 3.00
+  BMI difference: 1.69
+  Rating difference: 8.67
+Filled values - Pace: 72.8, Physic: 53.0
 P_ID: claudiobravo_1983
-Benzer oyuncu P_ID: berndleno
-Benzerlik özellikleri:
-  Yaş farkı: 8.00
-  BMI farkı: 0.73
-  Rating farkı: 4.17
-Doldurulan değerler - Pace: 72.8, Physic: 53.0
+Similar player P_ID: berndleno
+Similarity metrics:
+  Age difference: 8.00
+  BMI difference: 0.73
+  Rating difference: 4.17
+Filled values - Pace: 72.8, Physic: 53.0
 P_ID: costelpantilimon
-Benzer oyuncu P_ID: alexmccarthy
-Benzerlik özellikleri:
-  Yaş farkı: 0.00
-  BMI farkı: 2.65
-  Rating farkı: 2.00
-Doldurulan değerler - Pace: 72.8, Physic: 53.0
+Similar player P_ID: alexmccarthy
+Similarity metrics:
+  Age difference: 0.00
+  BMI difference: 2.65
+  Rating difference: 2.00
+Filled values - Pace: 72.8, Physic: 53.0
 P_ID: dannyward_1993
-Benzer oyuncu P_ID: sergioromero_1988
-Benzerlik özellikleri:
-  Yaş farkı: 4.00
-  BMI farkı: 0.84
-  Rating farkı: 2.43
-Doldurulan değerler - Pace: 72.8, Physic: 53.0
+Similar player P_ID: sergioromero_1988
+Similarity metrics:
+  Age difference: 4.00
+  BMI difference: 0.84
+  Rating difference: 2.43
+Filled values - Pace: 72.8, Physic: 53.0
 P_ID: dannyward_1993
-Benzer oyuncu P_ID: dannyward_1993
-Benzerlik özellikleri:
-  Yaş farkı: 2.00
-  BMI farkı: 0.00
-  Rating farkı: 0.00
-Doldurulan değerler - Pace: 72.8, Physic: 53.0
+Similar player P_ID: dannyward_1993
+Similarity metrics:
+  Age difference: 2.00
+  BMI difference: 0.00
+  Rating difference: 0.00
+Filled values - Pace: 72.8, Physic: 53.0
 P_ID: davidospina
-Benzer oyuncu P_ID: costelpantilimon
-Benzerlik özellikleri:
-  Yaş farkı: 1.00
-  BMI farkı: 0.07
-  Rating farkı: 4.83
-Doldurulan değerler - Pace: 72.8, Physic: 53.0
+Similar player P_ID: costelpantilimon
+Similarity metrics:
+  Age difference: 1.00
+  BMI difference: 0.07
+  Rating difference: 4.83
+Filled values - Pace: 72.8, Physic: 53.0
 P_ID: hugolloris
-Benzer oyuncu P_ID: berndleno
-Benzerlik özellikleri:
-  Yaş farkı: 4.00
-  BMI farkı: 0.08
-  Rating farkı: 2.67
-Doldurulan değerler - Pace: 72.8, Physic: 53.0
+Similar player P_ID: berndleno
+Similarity metrics:
+  Age difference: 4.00
+  BMI difference: 0.08
+  Rating difference: 2.67
+Filled values - Pace: 72.8, Physic: 53.0
 P_ID: hugolloris
-Benzer oyuncu P_ID: hugolloris
-Benzerlik özellikleri:
-  Yaş farkı: 1.00
-  BMI farkı: 0.00
-  Rating farkı: 0.00
-Doldurulan değerler - Pace: 72.8, Physic: 53.0
+Similar player P_ID: hugolloris
+Similarity metrics:
+  Age difference: 1.00
+  BMI difference: 0.00
+  Rating difference: 0.00
+Filled values - Pace: 72.8, Physic: 53.0
 P_ID: hugolloris
-Benzer oyuncu P_ID: hugolloris
-Benzerlik özellikleri:
-  Yaş farkı: 1.00
-  BMI farkı: 0.00
-  Rating farkı: 0.00
-Doldurulan değerler - Pace: 72.8, Physic: 53.0
+Similar player P_ID: hugolloris
+Similarity metrics:
+  Age difference: 1.00
+  BMI difference: 0.00
+  Rating difference: 0.00
+Filled values - Pace: 72.8, Physic: 53.0
 P_ID: hugolloris
-Benzer oyuncu P_ID: hugolloris
-Benzerlik özellikleri:
-  Yaş farkı: 1.00
-  BMI farkı: 0.00
-  Rating farkı: 0.00
-Doldurulan değerler - Pace: 72.8, Physic: 53.0
+Similar player P_ID: hugolloris
+Similarity metrics:
+  Age difference: 1.00
+  BMI difference: 0.00
+  Rating difference: 0.00
+Filled values - Pace: 72.8, Physic: 53.0
 P_ID: jackbutland
-Benzer oyuncu P_ID: davidospina
-Benzerlik özellikleri:
-  Yaş farkı: 2.00
-  BMI farkı: 0.94
-  Rating farkı: 0.00
-Doldurulan değerler - Pace: 72.8, Physic: 53.0
+Similar player P_ID: davidospina
+Similarity metrics:
+  Age difference: 2.00
+  BMI difference: 0.94
+  Rating difference: 0.00
+Filled values - Pace: 72.8, Physic: 53.0
 P_ID: jordanpickford
-Benzer oyuncu P_ID: jackbutland
-Benzerlik özellikleri:
-  Yaş farkı: 1.00
-  BMI farkı: 2.23
-  Rating farkı: 1.83
-Doldurulan değerler - Pace: 72.8, Physic: 53.0
+Similar player P_ID: jackbutland
+Similarity metrics:
+  Age difference: 1.00
+  BMI difference: 2.23
+  Rating difference: 1.83
+Filled values - Pace: 72.8, Physic: 53.0
 P_ID: karldarlow
-Benzer oyuncu P_ID: sergioromero_1988
-Benzerlik özellikleri:
-  Yaş farkı: 1.00
-  BMI farkı: 0.48
-  Rating farkı: 4.43
-Doldurulan değerler - Pace: 72.8, Physic: 53.0
+Similar player P_ID: sergioromero_1988
+Similarity metrics:
+  Age difference: 1.00
+  BMI difference: 0.48
+  Rating difference: 4.43
+Filled values - Pace: 72.8, Physic: 53.0
 P_ID: karldarlow
-Benzer oyuncu P_ID: karldarlow
-Benzerlik özellikleri:
-  Yaş farkı: 1.00
-  BMI farkı: 0.00
-  Rating farkı: 0.00
-Doldurulan değerler - Pace: 72.8, Physic: 53.0
+Similar player P_ID: karldarlow
+Similarity metrics:
+  Age difference: 1.00
+  BMI difference: 0.00
+  Rating difference: 0.00
+Filled values - Pace: 72.8, Physic: 53.0
 P_ID: karldarlow
-Benzer oyuncu P_ID: karldarlow
-Benzerlik özellikleri:
-  Yaş farkı: 1.00
-  BMI farkı: 0.00
-  Rating farkı: 0.00
-Doldurulan değerler - Pace: 72.8, Physic: 53.0
+Similar player P_ID: karldarlow
+Similarity metrics:
+  Age difference: 1.00
+  BMI difference: 0.00
+  Rating difference: 0.00
+Filled values - Pace: 72.8, Physic: 53.0
 P_ID: kasperschmeichel
-Benzer oyuncu P_ID: davidospina
-Benzerlik özellikleri:
-  Yaş farkı: 2.00
-  BMI farkı: 0.25
-  Rating farkı: 3.00
-Doldurulan değerler - Pace: 72.8, Physic: 53.0
+Similar player P_ID: davidospina
+Similarity metrics:
+  Age difference: 2.00
+  BMI difference: 0.25
+  Rating difference: 3.00
+Filled values - Pace: 72.8, Physic: 53.0
 P_ID: kepaarrizabalaga
-Benzer oyuncu P_ID: jackbutland
-Benzerlik özellikleri:
-  Yaş farkı: 1.00
-  BMI farkı: 0.61
-  Rating farkı: 0.50
-Doldurulan değerler - Pace: 72.8, Physic: 53.0
+Similar player P_ID: jackbutland
+Similarity metrics:
+  Age difference: 1.00
+  BMI difference: 0.61
+  Rating difference: 0.50
+Filled values - Pace: 72.8, Physic: 53.0
 P_ID: leegrant
-Benzer oyuncu P_ID: karldarlow
-Benzerlik özellikleri:
-  Yaş farkı: 6.00
-  BMI farkı: 0.52
-  Rating farkı: 0.67
-Doldurulan değerler - Pace: 72.8, Physic: 53.0
+Similar player P_ID: karldarlow
+Similarity metrics:
+  Age difference: 6.00
+  BMI difference: 0.52
+  Rating difference: 0.67
+Filled values - Pace: 72.8, Physic: 53.0
 P_ID: loriskarius
-Benzer oyuncu P_ID: kepaarrizabalaga
-Benzerlik özellikleri:
-  Yaş farkı: 2.00
-  BMI farkı: 0.41
-  Rating farkı: 0.00
-Doldurulan değerler - Pace: 72.8, Physic: 53.0
+Similar player P_ID: kepaarrizabalaga
+Similarity metrics:
+  Age difference: 2.00
+  BMI difference: 0.41
+  Rating difference: 0.00
+Filled values - Pace: 72.8, Physic: 53.0
 P_ID: loriskarius
-Benzer oyuncu P_ID: loriskarius
-Benzerlik özellikleri:
-  Yaş farkı: 1.00
-  BMI farkı: 0.00
-  Rating farkı: 0.00
-Doldurulan değerler - Pace: 72.8, Physic: 53.0
+Similar player P_ID: loriskarius
+Similarity metrics:
+  Age difference: 1.00
+  BMI difference: 0.00
+  Rating difference: 0.00
+Filled values - Pace: 72.8, Physic: 53.0
 P_ID: lukaszfabianski
-Benzer oyuncu P_ID: claudiobravo_1983
-Benzerlik özellikleri:
-  Yaş farkı: 1.00
-  BMI farkı: 0.64
-  Rating farkı: 0.33
-Doldurulan değerler - Pace: 72.8, Physic: 53.0
+Similar player P_ID: claudiobravo_1983
+Similarity metrics:
+  Age difference: 1.00
+  BMI difference: 0.64
+  Rating difference: 0.33
+Filled values - Pace: 72.8, Physic: 53.0
 P_ID: lukaszfabianski
-Benzer oyuncu P_ID: lukaszfabianski
-Benzerlik özellikleri:
-  Yaş farkı: 1.00
-  BMI farkı: 0.00
-  Rating farkı: 0.00
-Doldurulan değerler - Pace: 72.8, Physic: 53.0
+Similar player P_ID: lukaszfabianski
+Similarity metrics:
+  Age difference: 1.00
+  BMI difference: 0.00
+  Rating difference: 0.00
+Filled values - Pace: 72.8, Physic: 53.0
 P_ID: maartenstekelenburg
-Benzer oyuncu P_ID: costelpantilimon
-Benzerlik özellikleri:
-  Yaş farkı: 5.00
-  BMI farkı: 0.16
-  Rating farkı: 0.33
-Doldurulan değerler - Pace: 72.8, Physic: 53.0
+Similar player P_ID: costelpantilimon
+Similarity metrics:
+  Age difference: 5.00
+  BMI difference: 0.16
+  Rating difference: 0.33
+Filled values - Pace: 72.8, Physic: 53.0
 P_ID: michelvorm
-Benzer oyuncu P_ID: claudiobravo_1983
-Benzerlik özellikleri:
-  Yaş farkı: 0.00
-  BMI farkı: 1.69
-  Rating farkı: 1.25
-Doldurulan değerler - Pace: 72.8, Physic: 53.0
+Similar player P_ID: claudiobravo_1983
+Similarity metrics:
+  Age difference: 0.00
+  BMI difference: 1.69
+  Rating difference: 1.25
+Filled values - Pace: 72.8, Physic: 53.0
 P_ID: petrcech
-Benzer oyuncu P_ID: claudiobravo_1983
-Benzerlik özellikleri:
-  Yaş farkı: 1.00
-  BMI farkı: 0.20
-  Rating farkı: 4.75
-Doldurulan değerler - Pace: 72.8, Physic: 53.0
+Similar player P_ID: claudiobravo_1983
+Similarity metrics:
+  Age difference: 1.00
+  BMI difference: 0.20
+  Rating difference: 4.75
+Filled values - Pace: 72.8, Physic: 53.0
 P_ID: sergioromero_1987
-Benzer oyuncu P_ID: davidospina
-Benzerlik özellikleri:
-  Yaş farkı: 2.00
-  BMI farkı: 0.28
-  Rating farkı: 0.33
-Doldurulan değerler - Pace: 72.8, Physic: 53.0
+Similar player P_ID: davidospina
+Similarity metrics:
+  Age difference: 2.00
+  BMI difference: 0.28
+  Rating difference: 0.33
+Filled values - Pace: 72.8, Physic: 53.0
 P_ID: thibautcourtois
-Benzer oyuncu P_ID: loriskarius
-Benzerlik özellikleri:
-  Yaş farkı: 0.00
-  BMI farkı: 0.10
-  Rating farkı: 9.17
-Doldurulan değerler - Pace: 72.8, Physic: 53.0
+Similar player P_ID: loriskarius
+Similarity metrics:
+  Age difference: 0.00
+  BMI difference: 0.10
+  Rating difference: 9.17
+Filled values - Pace: 72.8, Physic: 53.0
 P_ID: tomheaton
-Benzer oyuncu P_ID: michelvorm
-Benzerlik özellikleri:
-  Yaş farkı: 3.00
-  BMI farkı: 0.00
-  Rating farkı: 1.08
-Doldurulan değerler - Pace: 72.8, Physic: 53.0
+Similar player P_ID: michelvorm
+Similarity metrics:
+  Age difference: 3.00
+  BMI difference: 0.00
+  Rating difference: 1.08
+Filled values - Pace: 72.8, Physic: 53.0
 P_ID: tomheaton
-Benzer oyuncu P_ID: tomheaton
-Benzerlik özellikleri:
-  Yaş farkı: 1.00
-  BMI farkı: 0.00
-  Rating farkı: 0.00
-Doldurulan değerler - Pace: 72.8, Physic: 53.0
+Similar player P_ID: tomheaton
+Similarity metrics:
+  Age difference: 1.00
+  BMI difference: 0.00
+  Rating difference: 0.00
+Filled values - Pace: 72.8, Physic: 53.0
 P_ID: tomheaton
-Benzer oyuncu P_ID: tomheaton
-Benzerlik özellikleri:
-  Yaş farkı: 1.00
-  BMI farkı: 0.00
-  Rating farkı: 0.00
-Doldurulan değerler - Pace: 72.8, Physic: 53.0
+Similar player P_ID: tomheaton
+Similarity metrics:
+  Age difference: 1.00
+  BMI difference: 0.00
+  Rating difference: 0.00
+Filled values - Pace: 72.8, Physic: 53.0
 P_ID: waynehennessey
-Benzer oyuncu P_ID: costelpantilimon
-Benzerlik özellikleri:
-  Yaş farkı: 1.00
-  BMI farkı: 0.91
-  Rating farkı: 0.50
-Doldurulan değerler - Pace: 72.8, Physic: 53.0
+Similar player P_ID: costelpantilimon
+Similarity metrics:
+  Age difference: 1.00
+  BMI difference: 0.91
+  Rating difference: 0.50
+Filled values - Pace: 72.8, Physic: 53.0
 P_ID: waynehennessey
-Benzer oyuncu P_ID: waynehennessey
-Benzerlik özellikleri:
-  Yaş farkı: 2.00
-  BMI farkı: 0.00
-  Rating farkı: 0.00
-Doldurulan değerler - Pace: 72.8, Physic: 53.0
+Similar player P_ID: waynehennessey
+Similarity metrics:
+  Age difference: 2.00
+  BMI difference: 0.00
+  Rating difference: 0.00
+Filled values - Pace: 72.8, Physic: 53.0
 
-Benzer oyunculardan toplam 37 kayıt dolduruldu.
+Total 37 records filled from similar players.
 
-=== DOLDURMA SONRASI PACE VE PHYSIC ANALİZİ ===
+=== PACE AND PHYSIC ANALYSIS AFTER FILLING ===
 
-Her iki sütunda da hala eksik olan satır sayısı: 0
+Number of rows still missing both values: 0
 
-=== VERİ SETİ SON DURUM ANALİZİ ===
+=== FINAL DATASET STATE ANALYSIS ===
 
-Genel Bilgiler:
-Satır Sayısı: 661
-Sütun Sayısı: 30
+General Information:
+Number of Rows: 661
+Number of Columns: 30
 
-Eksik Değerler:
+Missing Values:
 p_id                                 0
 start_year                           0
 season_days_injured                  0
@@ -673,25 +673,25 @@ significant_injury_prev_season       0
 cumulative_days_injured              0
 season_days_injured_prev_season      0
 
-=== VERİ TEMİZLEME ANALİZLERİ ===
+=== DATA CLEANING ANALYSIS ===
 
-1. AYKIRI DEĞER ANALİZİ
+1. OUTLIER ANALYSIS
 
-AGE Aykırı Değer Analizi:
-Alt Sınır: 17.50
-Üst Sınır: 37.50
-Aykırı Değer Sayısı: 4
-Aykırı Değerler:
+AGE Outlier Analysis:
+Lower bound: 17.50
+Upper bound: 37.50
+Number of outliers: 4
+Outliers:
                p_id  age  position
 148  bendavies_1981   38  Defender
 149  bendavies_1981   38  Defender
 154  bendavies_1981   39  Defender
 155  bendavies_1981   39  Defender
-FIFA_RATING Aykırı Değer Analizi:
-Alt Sınır: 62.25
-Üst Sınır: 89.58
-Aykırı Değer Sayısı: 11
-Aykırı Değerler:
+FIFA_RATING Outlier Analysis:
+Lower bound: 62.25
+Upper bound: 89.58
+Number of outliers: 11
+Outliers:
                     p_id  fifa_rating    position
 199    callumwilson_1997        53.00     Forward
 201    callumwilson_1997        53.00     Forward
@@ -704,11 +704,11 @@ Aykırı Değerler:
 653          jonasolsson        58.00    Defender
 960          nathantella        61.00  Midfielder
 1229      tyrickmitchell        59.50    Defender
-BMI Aykırı Değer Analizi:
-Alt Sınır: 19.41
-Üst Sınır: 26.73
-Aykırı Değer Sayısı: 10
-Aykırı Değerler:
+BMI Outlier Analysis:
+Lower bound: 19.41
+Upper bound: 26.73
+Number of outliers: 10
+Outliers:
                 p_id        bmi    position
 127       bakarysako  26.778568  Midfielder
 128       bakarysako  26.778568  Midfielder
@@ -720,11 +720,11 @@ Aykırı Değerler:
 1260       wesmorgan  28.525475    Defender
 1261       wesmorgan  28.525475    Defender
 1262       wesmorgan  28.525475    Defender
-PACE Aykırı Değer Analizi:
-Alt Sınır: 43.93
-Üst Sınır: 98.12
-Aykırı Değer Sayısı: 12
-Aykırı Değerler:
+PACE Outlier Analysis:
+Lower bound: 43.93
+Upper bound: 98.12
+Number of outliers: 12
+Outliers:
                    p_id       pace  position
 474         glennmurray  39.800000   Forward
 475         glennmurray  39.800000   Forward
@@ -738,11 +738,11 @@ Aykırı Değerler:
 1260          wesmorgan  38.166667  Defender
 1261          wesmorgan  38.166667  Defender
 1262          wesmorgan  38.166667  Defender
-PHYSIC Aykırı Değer Analizi:
-Alt Sınır: 51.67
-Üst Sınır: 91.67
-Aykırı Değer Sayısı: 15
-Aykırı Değerler:
+PHYSIC Outlier Analysis:
+Lower bound: 51.67
+Upper bound: 91.67
+Number of outliers: 15
+Outliers:
                 p_id     physic    position
 62     alexpritchard  51.000000  Midfielder
 229    christianatsu  47.833333  Midfielder
@@ -760,16 +760,16 @@ Aykırı Değerler:
 1148   sofianeboufal  48.666667  Midfielder
 1229  tyrickmitchell  51.500000    Defender
 
-2. TUTARSIZLIK ANALİZİ
+2. CONSISTENCY ANALYSIS
 
-Yaş-Rating Tutarsızlığı:
-35 yaş üstü yüksek ratingli oyuncular:
+Age-Rating Consistency:
+Old players (over 35) with high rating:
                    p_id  age  fifa_rating
 1009           petrcech   36    85.250000
 1300  zlatanibrahimovic   36    86.666667
 
-Position-Pace/Physic Tutarsızlığı:
-Düşük pace'li forvetler:
+Position-Pace/Physic Consistency:
+Forwards with low pace:
               p_id position       pace
 87     andycarroll  Forward  54.666667
 88     andycarroll  Forward  54.666667
@@ -780,18 +780,18 @@ Düşük pace'li forvetler:
 985  oliviergiroud  Forward  52.000000
 986  oliviergiroud  Forward  52.000000
 987  oliviergiroud  Forward  52.000000
-Düşük physic'li defanslar:
+Defenders with low physic:
                     p_id  position  physic
 964         necowilliams  Defender    55.0
 977   oleksandrzinchenko  Defender    59.5
 978   oleksandrzinchenko  Defender    59.5
 1229      tyrickmitchell  Defender    51.5
 
-BMI Tutarsızlığı:
+BMI Consistency:
 
-3. VERİ TİPİ KONTROLLERİ
+3. DATA TYPE CHECKS
 
-Sütun Veri Tipleri:
+Column Data Types:
 p_id                                  object
 start_year                             int64
 season_days_injured                    int64
@@ -823,21 +823,21 @@ significant_injury_prev_season       float64
 cumulative_days_injured              float64
 season_days_injured_prev_season      float64
 
-4. KORELASYON ANALİZİ
+4. CORRELATION ANALYSIS
 
-Yüksek Korelasyonlu Değişkenler (>0.9):
+Highly Correlated Variables (>0.9):
 season_minutes_played - season_games_played: 0.93
 total_minutes_played - total_games_played: 0.95
 cumulative_minutes_played - cumulative_games_played: 0.99
 
-Çıkartılan Yüksek Korelasyonlu Değişkenler:
+Removed Highly Correlated Variables:
 season_games_played, total_games_played, cumulative_games_played
 
-=== VERİ KALİTESİ SKORU ===
+=== DATA QUALITY SCORE ===
 
-1. Eksik Veri Skoru: %100.00
-2. Tutarlılık Skoru: %97.73
-3. Aykırı Değer Skoru: %98.43
-4. Veri Tipi Uygunluk Skoru: %100.00
+1. Missing Data Score: %100.00
+2. Consistency Score: %97.73
+3. Outlier Score: %98.43
+4. Data Type Consistency Score: %100.00
 
-GENEL VERİ KALİTESİ SKORU: %99.00
+OVERALL DATA QUALITY SCORE: %99.00

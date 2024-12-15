@@ -1,11 +1,11 @@
-=== FUTBOLCU YARALANMA VERİ SETİ DETAYLI ANALİZİ ===
+=== FOOTBALL PLAYER INJURY DATASET ANALYSIS ===
 
-1. GENEL BİLGİLER
-Satır Sayısı: 1301
-Sütun Sayısı: 30
-Veri Seti Boyutu: 305.05 KB
-Toplam Veri Noktası Sayısı: 39030
-Bellek Kullanımı (Sütun Bazlı):
+1. GENERAL INFORMATION
+Number of Rows: 1301
+Number of Columns: 30
+Dataset Size: 305.05 KB
+Total Data Points: 39030
+Memory Usage (Column-wise):
 Index                                  132
 p_id2                                79350
 start_year                           10408
@@ -38,7 +38,7 @@ significant_injury_prev_season       10408
 cumulative_days_injured              10408
 season_days_injured_prev_season      10408
 
-2. SÜTUNLAR VE VERİ TİPLERİ
+2. COLUMNS AND DATA TYPES
 p_id2                                 object
 start_year                             int64
 season_days_injured                    int64
@@ -70,7 +70,7 @@ significant_injury_prev_season       float64
 cumulative_days_injured              float64
 season_days_injured_prev_season      float64
 
-Sütun İsimleri:
+Column Names:
 - p_id2
 - start_year
 - season_days_injured
@@ -102,25 +102,25 @@ Sütun İsimleri:
 - cumulative_days_injured
 - season_days_injured_prev_season
 
-3. EKSİK DEĞER ANALİZİ
-                                   Eksik Değer Sayısı  Eksik Değer Yüzdesi
-pace                                               95             7.302075
-physic                                             95             7.302075
-position                                            2             0.153728
-cumulative_minutes_played                         604            46.425826
-cumulative_games_played                           604            46.425826
-minutes_per_game_prev_seasons                     616            47.348194
-avg_days_injured_prev_seasons                     604            46.425826
-avg_games_per_season_prev_seasons                 604            46.425826
-position_numeric                                    2             0.153728
-significant_injury_prev_season                    604            46.425826
-cumulative_days_injured                           604            46.425826
-season_days_injured_prev_season                   604            46.425826
+3. MISSING VALUE ANALYSIS
+                                   Missing Values  Missing Percentage
+pace                                           95            7.302075
+physic                                         95            7.302075
+position                                        2            0.153728
+cumulative_minutes_played                     604           46.425826
+cumulative_games_played                       604           46.425826
+minutes_per_game_prev_seasons                 616           47.348194
+avg_days_injured_prev_seasons                 604           46.425826
+avg_games_per_season_prev_seasons             604           46.425826
+position_numeric                                2            0.153728
+significant_injury_prev_season                604           46.425826
+cumulative_days_injured                       604           46.425826
+season_days_injured_prev_season               604           46.425826
 
-Toplam Eksik Değer Sayısı: 5038
-Toplam Eksik Değer Yüzdesi: 12.91%
+Total Missing Values: 5038
+Total Missing Percentage: 12.91%
 
-4. TEMEL İSTATİSTİKLER
+4. BASIC STATISTICS
             p_id2   start_year  season_days_injured  total_days_injured  season_minutes_played  season_games_played  season_matches_in_squad  total_minutes_played  total_games_played         dob height_cm    weight_kg nationality      work_rate         pace       physic  fifa_rating  position          age  cumulative_minutes_played  cumulative_games_played  minutes_per_game_prev_seasons  avg_days_injured_prev_seasons  avg_games_per_season_prev_seasons          bmi  work_rate_numeric  position_numeric  significant_injury_prev_season  cumulative_days_injured  season_days_injured_prev_season
 count        1301  1301.000000          1301.000000         1301.000000            1301.000000          1301.000000              1301.000000           1301.000000         1301.000000        1301      1301  1301.000000        1301           1301  1206.000000  1206.000000  1301.000000      1299  1301.000000                 697.000000               697.000000                     685.000000                     697.000000                         697.000000  1301.000000        1301.000000       1299.000000                      697.000000               697.000000                       697.000000
 unique        604          NaN                  NaN                 NaN                    NaN                  NaN                      NaN                   NaN                 NaN         588       166          NaN          61              8          NaN          NaN          NaN         4          NaN                        NaN                      NaN                            NaN                            NaN                                NaN          NaN                NaN               NaN                             NaN                      NaN                              NaN
@@ -134,196 +134,196 @@ min           NaN  2016.000000             0.000000            3.000000         
 75%           NaN  2019.000000           103.000000          370.000000            2311.000000            29.000000                33.000000           8387.000000          107.000000         NaN       NaN    82.000000         NaN            NaN    77.833333    76.500000    78.500000       NaN    29.000000                4982.000000                64.000000                      87.925926                     111.500000                          29.000000    23.947116           3.500000          3.000000                        0.000000               903.000000                       109.000000
 max           NaN  2020.000000           702.000000         2398.000000            3610.000000            38.000000                54.000000          16768.000000          179.000000         NaN       NaN    99.000000         NaN            NaN    93.000000    88.166667    89.500000       NaN    39.000000               39102.000000               508.000000                      95.000000                     702.000000                          38.000000    28.525475           4.000000          3.000000                        1.000000              7590.000000                       702.000000
 
-5. KATEGORİK DEĞİŞKEN BİLGİLERİ
+5. CATEGORICAL VARIABLE INFORMATION
 
 p_id2:
-Unique değer sayısı: 604
-İlk 5 unique değer: ['aaronconnolly' 'aaroncresswell' 'aaronlennon' 'aaronmooy'
+Number of unique values: 604
+First 5 unique values: ['aaronconnolly' 'aaroncresswell' 'aaronlennon' 'aaronmooy'
  'aaronramsdale']
-Değer dağılımı:
+Value distribution:
 p_id2
 bendavies       24
 dannyrose       18
 adamsmith       12
 dannyward       12
 jamescollins     8
-En sık görülen değer: bendavies
+Most frequent value: bendavies
 
 
 dob:
-Unique değer sayısı: 588
-İlk 5 unique değer: ['2000-01-28' '1989-12-15' '1987-04-16' '1990-09-15' '1998-05-14']
-Değer dağılımı:
+Number of unique values: 588
+First 5 unique values: ['2000-01-28' '1989-12-15' '1987-04-16' '1990-09-15' '1998-05-14']
+Value distribution:
 dob
 1993-06-22    9
 1995-08-11    8
 1993-04-24    8
 1981-05-27    8
 1993-11-07    8
-En sık görülen değer: 1993-06-22
+Most frequent value: 1993-06-22
 
 
 height_cm:
-Unique değer sayısı: 166
-İlk 5 unique değer: ['175.33333333333334' '171.66666666666666' '165.0' '173.83333333333334'
+Number of unique values: 166
+First 5 unique values: ['175.33333333333334' '171.66666666666666' '165.0' '173.83333333333334'
  '188.0']
-Değer dağılımı:
+Value distribution:
 height_cm
 185.0    75
 183.0    66
 180.0    64
 178.0    57
 188.0    45
-En sık görülen değer: 185.0
+Most frequent value: 185.0
 
 
 nationality:
-Unique değer sayısı: 61
-İlk 5 unique değer: ['Republic of Ireland' 'England' 'Australia' 'Wales' 'Germany']
-Değer dağılımı:
+Number of unique values: 61
+First 5 unique values: ['Republic of Ireland' 'England' 'Australia' 'Wales' 'Germany']
+Value distribution:
 nationality
 England                551
 France                  87
 Republic of Ireland     55
 Scotland                52
 Netherlands             51
-En sık görülen değer: England
+Most frequent value: England
 
 
 work_rate:
-Unique değer sayısı: 8
-İlk 5 unique değer: ['Medium/Low' 'High/Medium' 'High/High' 'Medium/Medium' 'Medium/High']
-Değer dağılımı:
+Number of unique values: 8
+First 5 unique values: ['Medium/Low' 'High/Medium' 'High/High' 'Medium/Medium' 'Medium/High']
+Value distribution:
 work_rate
 Medium/Medium    434
 High/Medium      337
 Medium/High      209
 High/High        206
 Low/Medium        29
-En sık görülen değer: Medium/Medium
+Most frequent value: Medium/Medium
 
 
 position:
-Unique değer sayısı: 4
-İlk 5 unique değer: ['Forward' 'Defender' 'Midfielder' 'Goalkeeper' nan]
-Değer dağılımı:
+Number of unique values: 4
+First 5 unique values: ['Forward' 'Defender' 'Midfielder' 'Goalkeeper' nan]
+Value distribution:
 position
 Defender      492
 Midfielder    457
 Forward       253
 Goalkeeper     97
-En sık görülen değer: Defender
+Most frequent value: Defender
 
 
-6. AYKIRI DEĞER BİLGİLERİ
+6. OUTLIER ANALYSIS
 
 season_days_injured:
-Aykırı değer sayısı: 98
-Aykırı değer yüzdesi: 7.53%
-Aykırı değer aralığı: [222.00, 702.00]
-Normal aralık: [-94.50, 221.50]
+Number of outliers: 98
+Outlier percentage: 7.53%
+Outlier range: [222.00, 702.00]
+Normal range: [-94.50, 221.50]
 
 total_days_injured:
-Aykırı değer sayısı: 38
-Aykırı değer yüzdesi: 2.92%
-Aykırı değer aralığı: [778.00, 2398.00]
-Normal aralık: [-277.50, 758.50]
+Number of outliers: 38
+Outlier percentage: 2.92%
+Outlier range: [778.00, 2398.00]
+Normal range: [-277.50, 758.50]
 
 weight_kg:
-Aykırı değer sayısı: 10
-Aykırı değer yüzdesi: 0.77%
-Aykırı değer aralığı: [97.67, 99.00]
-Normal aralık: [57.00, 97.00]
+Number of outliers: 10
+Outlier percentage: 0.77%
+Outlier range: [97.67, 99.00]
+Normal range: [57.00, 97.00]
 
 pace:
-Aykırı değer sayısı: 27
-Aykırı değer yüzdesi: 2.08%
-Aykırı değer aralığı: [28.33, 42.60]
-Normal aralık: [43.25, 98.58]
+Number of outliers: 27
+Outlier percentage: 2.08%
+Outlier range: [28.33, 42.60]
+Normal range: [43.25, 98.58]
 
 physic:
-Aykırı değer sayısı: 38
-Aykırı değer yüzdesi: 2.92%
-Aykırı değer aralığı: [40.75, 51.67]
-Normal aralık: [51.92, 91.25]
+Number of outliers: 38
+Outlier percentage: 2.92%
+Outlier range: [40.75, 51.67]
+Normal range: [51.92, 91.25]
 
 fifa_rating:
-Aykırı değer sayısı: 23
-Aykırı değer yüzdesi: 1.77%
-Aykırı değer aralığı: [53.00, 89.50]
-Normal aralık: [60.58, 89.25]
+Number of outliers: 23
+Outlier percentage: 1.77%
+Outlier range: [53.00, 89.50]
+Normal range: [60.58, 89.25]
 
 age:
-Aykırı değer sayısı: 8
-Aykırı değer yüzdesi: 0.61%
-Aykırı değer aralığı: [37.00, 39.00]
-Normal aralık: [16.50, 36.50]
+Number of outliers: 8
+Outlier percentage: 0.61%
+Outlier range: [37.00, 39.00]
+Normal range: [16.50, 36.50]
 
 cumulative_minutes_played:
-Aykırı değer sayısı: 48
-Aykırı değer yüzdesi: 3.69%
-Aykırı değer aralığı: [10354.00, 39102.00]
-Normal aralık: [-3815.50, 10260.50]
+Number of outliers: 48
+Outlier percentage: 3.69%
+Outlier range: [10354.00, 39102.00]
+Normal range: [-3815.50, 10260.50]
 
 cumulative_games_played:
-Aykırı değer sayısı: 43
-Aykırı değer yüzdesi: 3.31%
-Aykırı değer aralığı: [127.00, 508.00]
-Normal aralık: [-38.50, 125.50]
+Number of outliers: 43
+Outlier percentage: 3.31%
+Outlier range: [127.00, 508.00]
+Normal range: [-38.50, 125.50]
 
 minutes_per_game_prev_seasons:
-Aykırı değer sayısı: 18
-Aykırı değer yüzdesi: 1.38%
-Aykırı değer aralığı: [7.00, 31.26]
-Normal aralık: [31.86, 121.56]
+Number of outliers: 18
+Outlier percentage: 1.38%
+Outlier range: [7.00, 31.26]
+Normal range: [31.86, 121.56]
 
 avg_days_injured_prev_seasons:
-Aykırı değer sayısı: 25
-Aykırı değer yüzdesi: 1.92%
-Aykırı değer aralığı: [240.33, 702.00]
-Normal aralık: [-94.75, 235.25]
+Number of outliers: 25
+Outlier percentage: 1.92%
+Outlier range: [240.33, 702.00]
+Normal range: [-94.75, 235.25]
 
 bmi:
-Aykırı değer sayısı: 17
-Aykırı değer yüzdesi: 1.31%
-Aykırı değer aralığı: [18.79, 28.53]
-Normal aralık: [19.31, 26.73]
+Number of outliers: 17
+Outlier percentage: 1.31%
+Outlier range: [18.79, 28.53]
+Normal range: [19.31, 26.73]
 
 significant_injury_prev_season:
-Aykırı değer sayısı: 157
-Aykırı değer yüzdesi: 12.07%
-Aykırı değer aralığı: [1.00, 1.00]
-Normal aralık: [0.00, 0.00]
+Number of outliers: 157
+Outlier percentage: 12.07%
+Outlier range: [1.00, 1.00]
+Normal range: [0.00, 0.00]
 
 cumulative_days_injured:
-Aykırı değer sayısı: 60
-Aykırı değer yüzdesi: 4.61%
-Aykırı değer aralığı: [1980.00, 7590.00]
-Normal aralık: [-877.00, 1971.00]
+Number of outliers: 60
+Outlier percentage: 4.61%
+Outlier range: [1980.00, 7590.00]
+Normal range: [-877.00, 1971.00]
 
 season_days_injured_prev_season:
-Aykırı değer sayısı: 47
-Aykırı değer yüzdesi: 3.61%
-Aykırı değer aralığı: [236.00, 702.00]
-Normal aralık: [-98.50, 233.50]
+Number of outliers: 47
+Outlier percentage: 3.61%
+Outlier range: [236.00, 702.00]
+Normal range: [-98.50, 233.50]
 
-7. VERİ TUTARLILIĞI KONTROLÜ
+7. DATA CONSISTENCY CHECK
 
-Doğum tarihi analizi:
-En küçük tarih: 1979-12-05
-En büyük tarih: 2002-06-27
+Date of birth analysis:
+Earliest date: 1979-12-05
+Latest date: 2002-06-27
 
-Boy ve kilo değerleri:
-Boy aralığı: [163.00, 203.00] cm
-Kilo aralığı: [58.00, 99.00] kg
+Height and weight values:
+Height range: [163.00, 203.00] cm
+Weight range: [58.00, 99.00] kg
 
-BMI İstatistikleri:
-Ortalama BMI: 23.04
-BMI aralığı: [18.79, 28.53]
+BMI Statistics:
+Average BMI: 23.04
+BMI range: [18.79, 28.53]
 
-8. KORELASYON BİLGİLERİ
+8. CORRELATION ANALYSIS
 
-Tüm Korelasyonlar:
+All Correlations:
                                    start_year  season_days_injured  total_days_injured  season_minutes_played  season_games_played  season_matches_in_squad  total_minutes_played  total_games_played  weight_kg      pace    physic  fifa_rating       age  cumulative_minutes_played  cumulative_games_played  minutes_per_game_prev_seasons  avg_days_injured_prev_seasons  avg_games_per_season_prev_seasons       bmi  work_rate_numeric  position_numeric  significant_injury_prev_season  cumulative_days_injured  season_days_injured_prev_season
 start_year                           1.000000            -0.111305           -0.107074               0.032890             0.046429                 0.123934              0.076634            0.078305  -0.089258  0.102651 -0.121082    -0.145419 -0.010431                   0.144240                 0.156617                      -0.067584                      -0.031176                           0.036797 -0.098841           0.030369         -0.029820                       -0.064948                 0.079177                        -0.041809
 season_days_injured                 -0.111305             1.000000            0.486199              -0.328282            -0.360381                -0.475523             -0.173577           -0.168798   0.019699 -0.059692  0.009574    -0.054316  0.022169                   0.050787                 0.053567                      -0.027670                       0.131220                          -0.089847  0.004743          -0.018107          0.003328                        0.189084                 0.240429                         0.188183
@@ -350,7 +350,7 @@ significant_injury_prev_season      -0.064948             0.189084            0.
 cumulative_days_injured              0.079177             0.240429            0.413155              -0.137370            -0.137442                -0.039145             -0.008049            0.002416  -0.090113 -0.010745 -0.000082    -0.206322  0.084422                   0.788320                 0.813349                      -0.003797                       0.254618                          -0.139666 -0.029089          -0.003582         -0.106536                        0.193224                 1.000000                         0.251756
 season_days_injured_prev_season     -0.041809             0.188183            0.505933              -0.278717            -0.275021                -0.268250             -0.216592           -0.209992   0.046190 -0.059724  0.027138    -0.061753  0.060680                   0.000378                 0.005878                      -0.087138                       0.827110                          -0.363331  0.014790          -0.012182         -0.008952                        0.809256                 0.251756                         1.000000
 
-Yüksek korelasyonlu değişkenler (>0.7):
+Highly correlated variables (>0.7):
 season_minutes_played - season_games_played: 0.94
 season_minutes_played - season_matches_in_squad: 0.73
 season_games_played - season_minutes_played: 0.94
@@ -370,6 +370,6 @@ cumulative_days_injured - cumulative_games_played: 0.81
 season_days_injured_prev_season - avg_days_injured_prev_seasons: 0.83
 season_days_injured_prev_season - significant_injury_prev_season: 0.81
 
-9. VERİ KALİTESİ SKORU
-Veri Tamlık Skoru: 87.09%
-Veri Benzersizlik Skoru: 20.35%
+9. DATA QUALITY METRICS
+Data Completeness Score: 87.09%
+Data Uniqueness Score: 20.35%

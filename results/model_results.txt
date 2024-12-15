@@ -1,25 +1,24 @@
-=== MODEL DEĞERLENDİRME RAPORU ===
+=== MODEL EVALUATION REPORT ===
 
-1. YARALANMA KATEGORİLERİ DAĞILIMI
+1. INJURY CATEGORY DISTRIBUTION
 injury_category
 1     30
 2    178
 3    245
 4    208
 
-Kategori Açıklamaları:
-0: No injury (0 gün)
-1: Minimal injury (1-7 gün)
-2: Mild/Moderate injury (8-28 gün)
-3: Severe injury (29-84 gün)
-4: Long-term injury (>84 gün)
+Category Descriptions:
+1: Minimal injury (1-7 days)
+2: Mild/Moderate injury (8-28 days)
+3: Severe injury (29-84 days)
+4: Long-term injury (>84 days)
 
-2. MODEL METRİKLERİ
+2. MODEL METRICS
            Model  Accuracy  Precision    Recall  F1-score
 0  Decision Tree  0.571429   0.613584  0.571429  0.576939
 1  Random Forest  0.609023   0.621775  0.609023  0.603558
 
-3. DETAYLI SINIFLANDIRMA RAPORU
+3. DETAILED CLASSIFICATION REPORT
 
 Decision Tree:
               precision    recall  f1-score   support
@@ -46,9 +45,9 @@ Random Forest:
 weighted avg       0.62      0.61      0.60       133
 
 
-4. ÖZELLİK ÖNEMİ ANALİZİ
+4. FEATURE IMPORTANCE ANALYSIS
 
-Decision Tree - Tüm Özellikler:
+Decision Tree - All Features:
                               Feature  Importance
 7             season_matches_in_squad    0.309090
 11            cumulative_days_injured    0.204508
@@ -63,7 +62,7 @@ Decision Tree - Tüm Özellikler:
 5                   work_rate_numeric    0.023481
 3                                pace    0.019087
 
-Random Forest - Tüm Özellikler:
+Random Forest - All Features:
                               Feature  Importance
 7             season_matches_in_squad    0.241375
 11            cumulative_days_injured    0.149066
